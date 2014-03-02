@@ -38,18 +38,31 @@ $gray1:  hsl(0, 0, 15%);
 $gray0a: hsl(0, 0, 9%);
 $gray0b: hsl(0, 0, 6%);
 
-$cyan: #23C897;
-$berry: #E41E91;
-$gray: #999999;
-$blue: #2DAEE1;
+// $cyan: #23C897;
+// $berry: #E41E91;
+// $gray: #999999;
+// $blue: #2DAEE1;
+
+$blue: #268bd2;
+$cyan: #2aa198;
+$gray-dark: #616161;
+$gray-light: #9e9e9e; // same as: gutter-text
+$green: #738d00;
+$magenta: #d33682;
+$orange: #cb4b16;
+$red: #dc322f;
+$violet: #6c71c4;
+$yellow: #b58900;
 
 $caret: $blue;
 
 // $page:     hsl(0, 0, 96.5%);
-$page:        #f5f2eb;
-$page-text:   $gray2;
+$page:        #f6f6f6; // #f5f2eb;
+$page-text:   invert($page); // $gray2;
 $gutter:      darken($page, 6); // "#eeeeee"
 $gutter-text: lighten($page-text, 38); // "#9e9e9e"
+
+$bg-fade: 0.76;
 
 * {
 	caret: $caret;
@@ -94,7 +107,7 @@ $gutter-text: lighten($page-text, 38); // "#9e9e9e"
 string.other.link.inline
 {
 	name: "Black";
-	foreground: #3d3d3d;
+	foreground: $page-text;
 }
 
 color.gray,
@@ -107,7 +120,7 @@ markup.strikethrough,
 markup.comment
 {
 	name: "Gray (Light)";
-	foreground: #9e9e9e;
+	foreground: $gray-light;
 }
 
 color.darkgray,
@@ -122,14 +135,14 @@ punctuation.definition.list.task.checkbox.incomplete,
 markup.all-caps
 {
 	name: "Gray (Dark)";
-	foreground: #616161;
+	foreground: $gray-dark;
 }
 
 color.yellow,
 markup.changed
 {
 	name: "Yellow";
-	foreground: #b58900;
+	foreground: $yellow;
 }
 
 color.orange,
@@ -138,14 +151,14 @@ variable.parameter,
 variable.other
 {
 	name: "Orange";
-	foreground: #cb4b16;
+	foreground: $orange;
 }
 
 color.red,
 markup.deleted
 {
 	name: "Red";
-	foreground: #dc322f;
+	foreground: $red;
 }
 
 color.magenta,
@@ -155,7 +168,7 @@ entity.name.tag/*,
 constant.numeric.line-number.find-in-files - match*/
 {
 	name: "Magenta";
-	foreground: #d33682;
+	foreground: $magenta;
 }
 
 color.purple,
@@ -168,7 +181,7 @@ markup.highlight,
 constant.character.escape
 {
 	name: "Violet";
-	foreground: #6c71c4;
+	foreground: $violet;
 }
 
 color.blue,
@@ -181,13 +194,13 @@ entity.name.filename.find-in-files,
 markup.underline.link
 {
 	name: "Blue";
-	foreground: #268bd2;
+	foreground: $blue;
 }
 
 color.cyan
 {
 	name: "Cyan";
-	foreground: #2aa198;
+	foreground: $cyan;
 }
 
 color.green,
@@ -199,7 +212,7 @@ markup.inserted,
 string.addition
 {
 	name: "Green";
-	foreground: #738d00;
+	foreground: $green;
 }
 
 /* Reversed Colors */
@@ -208,68 +221,65 @@ bgcolor.gray,
 markup.strikethrough
 {
 	name: "Reversed Gray (Light)";
-	background: #9e9e9e33;
+	background: transparentize($gray-light, $bg-fade);
 }
 
 bgcolor.darkgray
 {
 	name: "Reversed Gray (Dark)";
-	background: #61616133;
+	background: transparentize($gray-dark, $bg-fade);
 }
 
 bgcolor.yellow
 {
 	name: "Reversed Yellow";
-	background: #b5890033;
+	background: transparentize($yellow, $bg-fade);
 }
 
 bgcolor.orange
 {
 	name: "Reversed Orange";
-	background: #cb4b1633;
+	background: transparentize($orange, $bg-fade);
 }
 
 bgcolor.red,
 invalid
 {
 	name: "Reversed Red";
-	background: "#dc322f33";
+	background: transparentize($red, $bg-fade);
 }
 
 bgcolor.magenta,
 invalid.deprecated
 {
 	name: "Reversed Magenta";
-	background: "#d3368233";
+	background: transparentize($magenta, $bg-fade);
 }
 
 bgcolor.violet,
 constant.character.hard-line-break
 {
 	name: "Reversed Violet";
-	background: "#6c71c433";
+	background: transparentize($violet, $bg-fade);
 }
 
 bgcolor.blue
 {
 	name: "Reversed Blue";
-	background: "#268bd233";
+	background: transparentize($blue, $bg-fade);
 }
 
 bgcolor.cyan
 {
 	name: "Reversed Cyan";
-	background: "#2aa19833";
+	background: transparentize($cyan, $bg-fade);
 }
 
 bgcolor.green
 {
 	name: "Reversed Green";
-	background: "#738d0033";
+	background: transparentize($green, $bg-fade);
 }
-
-
-
 
 /* Styles by Font */
 
