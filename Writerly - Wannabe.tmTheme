@@ -12,19 +12,19 @@
 			<key>settings</key>
 			<dict>
 				<key>activeGuide</key>
-				<string>#61616166</string>
+				<string>#3D3D3D61</string>
 				<key>background</key>
-				<string>#ede9e3</string>
+				<string>#f5f2eb</string>
 				<key>bracketContentsForeground</key>
-				<string>#00aeff</string>
+				<string>#2daee1</string>
 				<key>bracketContentsOptions</key>
 				<string>underline</string>
 				<key>bracketsForeground</key>
-				<string>#00aeff</string>
+				<string>#2daee1</string>
 				<key>bracketsOptions</key>
 				<string>underline</string>
 				<key>caret</key>
-				<string>#00aeff</string>
+				<string>#2daee1</string>
 				<key>findHighlight</key>
 				<string>#ffc71977</string>
 				<key>findHighlightForeground</key>
@@ -32,9 +32,9 @@
 				<key>foreground</key>
 				<string>#3d3d3d</string>
 				<key>guide</key>
-				<string>#9e9e9e66</string>
+				<string>#3D3D3D26</string>
 				<key>gutter</key>
-				<string>#e1dad0</string>
+				<string>#ebe5d7</string>
 				<key>gutterForeground</key>
 				<string>#9e9e9e</string>
 				<key>inactiveSelection</key>
@@ -42,21 +42,252 @@
 				<key>invisibles</key>
 				<string>#fe57a1</string>
 				<key>lineHighlight</key>
-				<string>#e1dad0</string>
+				<string>#ebe5d7</string>
 				<key>selection</key>
-				<string>#00AEFF26</string>
+				<string>#2DAEE126</string>
 				<key>selectionBorder</key>
-				<string>#00aeff55</string>
+				<string>#2DAEE1C2</string>
 				<key>shadow</key>
 				<string>#9e9e9e</string>
 				<key>shadowWidth</key>
 				<string>4</string>
 				<key>stackGuide</key>
-				<string>#9e9e9e66</string>
+				<string>#3D3D3D26</string>
 				<key>tagsForeground</key>
-				<string>#00aeff</string>
+				<string>#2daee1</string>
 				<key>tagsOptions</key>
 				<string>underline</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>string.other.link.inline</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#3d3d3d</string>
+				<key>name</key>
+				<string>Black</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>color.gray, comment, meta.diff, meta.diff.header, text.html.markdown punctuation, markup.separator, markup.strikethrough, markup.comment</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#9e9e9e</string>
+				<key>name</key>
+				<string>Gray (Light)</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>color.darkgray, style.bold, markup.heading, markup.bold, markup.quote markup.italic markup.bold, markup.raw, markup.quote, string.other.link.title, punctuation.definition.list.task.checkbox.incomplete, markup.all-caps</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#616161</string>
+				<key>name</key>
+				<string>Gray (Dark)</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>color.yellow, markup.changed</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#b58900</string>
+				<key>name</key>
+				<string>Yellow</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>color.orange, string, variable.parameter, variable.other</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#cb4b16</string>
+				<key>name</key>
+				<string>Orange</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>color.red, markup.deleted</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#dc322f</string>
+				<key>name</key>
+				<string>Red</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>color.magenta, keyword, storage, entity.name.tag</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#d33682</string>
+				<key>name</key>
+				<string>Magenta</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>color.purple, constant.numeric, constant.language, constant.character, constant.other, markup.underline.link.reference, markup.highlight, constant.character.escape</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#6c71c4</string>
+				<key>name</key>
+				<string>Violet</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>color.blue, storage.type, support.function, support.constant, support.type, support.class, entity.name.filename.find-in-files, markup.underline.link</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#268bd2</string>
+				<key>name</key>
+				<string>Blue</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>color.cyan</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#2aa198</string>
+				<key>name</key>
+				<string>Cyan</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>color.green, entity.name.class, entity.other.inherited-class, entity.name.function, entity.other.attribute-name, markup.inserted, string.addition</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#738d00</string>
+				<key>name</key>
+				<string>Green</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>bgcolor.gray, markup.strikethrough</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#9e9e9e33</string>
+				<key>name</key>
+				<string>Reversed Gray (Light)</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>bgcolor.darkgray</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#61616133</string>
+				<key>name</key>
+				<string>Reversed Gray (Dark)</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>bgcolor.yellow</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#b5890033</string>
+				<key>name</key>
+				<string>Reversed Yellow</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>bgcolor.orange</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#cb4b1633</string>
+				<key>name</key>
+				<string>Reversed Orange</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>bgcolor.red, invalid</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#dc322f33</string>
+				<key>name</key>
+				<string>Reversed Red</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>bgcolor.magenta, invalid.deprecated</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#d3368233</string>
+				<key>name</key>
+				<string>Reversed Magenta</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>bgcolor.violet, constant.character.hard-line-break</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#6c71c433</string>
+				<key>name</key>
+				<string>Reversed Violet</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>bgcolor.blue</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#268bd233</string>
+				<key>name</key>
+				<string>Reversed Blue</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>bgcolor.cyan</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#2aa19833</string>
+				<key>name</key>
+				<string>Reversed Cyan</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>bgcolor.green</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#738d0033</string>
+				<key>name</key>
+				<string>Reversed Green</string>
 			</dict>
 		</dict>
 		<dict>
