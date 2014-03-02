@@ -1,6 +1,5 @@
-@name "Writerly - Light";
+@name "Writerly - Wannabe (Light)";
 @author "Alex Armstrong";
-
 
 /*
 - Page:
@@ -54,13 +53,13 @@ $red: #dc322f;
 $violet: #6c71c4;
 $yellow: #b58900;
 
-$caret: $blue;
+$caret: #00aeff;
 
 // $page:     hsl(0, 0, 96.5%);
 $page:        #f6f6f6; // #f5f2eb;
-$page-text:   invert($page); // $gray2;
+$page-text:   $gray2; // invert($page); // $gray2;
 $gutter:      darken($page, 6); // "#eeeeee"
-$gutter-text: lighten($page-text, 38); // "#9e9e9e"
+$gutter-text: $gray-light; // lighten($page-text, 38); // "#9e9e9e"
 
 $bg-fade: 0.76;
 
@@ -80,7 +79,7 @@ $bg-fade: 0.76;
 
 	/* Selection */
 	selection: transparentize($caret, .85); //'#00aeff22';
-	selectionBorder: transparentize($caret, .24); // '#00aeff55';
+	selectionBorder: transparentize($caret, .38); // '#00aeff55';
 	inactiveSelection: '#9e9e9e33';
 
 	/* Find */
