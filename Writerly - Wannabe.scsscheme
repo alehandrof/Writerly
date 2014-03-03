@@ -11,14 +11,19 @@
 - Berry: #E41E91
 - Gray: #999999
 - Blue: #2DAEE1
-	- Orange: #e1602d
-	- Green: #54e12d; #aee12d
-	- Purple: #ba2de1
-	- Pink: #e12dae ; #e12d66
-	- Yellow: #e1cc2d
-	- Cyan: #2de1a8 ; #2de1cc
-	- Dark Blue: #2d42e1; #2d66e1
+	- $orange: #e1602d;
+	- $green: #54e12d; // #aee12d
+	- $violet: #ba2de1;
+	- $magenta: #e12dae; // #e12d66
+	- $yellow: #e1cc2d;
+	- $cyan: #2de1a8; // #2de1cc
+	- $dark-blue: #2d42e1; // #2d66e1
 */
+
+// $cyan: #23C897;
+// $magenta: #E41E91;
+// $gray: #999999;
+// $blue: #2DAEE1;
 
 
 // Old
@@ -37,15 +42,12 @@ $gray1:  hsl(0, 0, 15%);
 $gray0a: hsl(0, 0, 9%);
 $gray0b: hsl(0, 0, 6%);
 
-// $cyan: #23C897;
-// $berry: #E41E91;
-// $gray: #999999;
-// $blue: #2DAEE1;
+$hotblue: #00aeff;
 
 $blue: #268bd2;
 $cyan: #2aa198;
-$gray-dark: #616161;
-$gray-light: #9e9e9e; // same as: gutter-text
+// $gray-dark: #616161;
+// $gray-light: #9e9e9e; // same as: gutter-text
 $green: #738d00;
 $magenta: #d33682;
 $orange: #cb4b16;
@@ -53,13 +55,18 @@ $red: #dc322f;
 $violet: #6c71c4;
 $yellow: #b58900;
 
-$caret: #00aeff;
+
+$caret: $hotblue;
 
 // $page:     hsl(0, 0, 96.5%);
-$page:        #f6f6f6; // #f5f2eb;
-$page-text:   $gray2; // invert($page); // $gray2;
-$gutter:      darken($page, 6); // "#eeeeee"
-$gutter-text: $gray-light; // lighten($page-text, 38); // "#9e9e9e"
+$page:        #F9F7F2; // #f6f6f6; // #f5f2eb;
+$page-text:   hsl(hue(invert($page)), saturation(invert($page)), 24%); // $gray2; // invert($page); // $gray2;
+$gutter:      desaturate(darken($page, 3), 3); // darken($page, 6); // "#eeeeee"
+$gutter-text: mix($page-text, $page, 38%); // $gray-light; // lighten($page-text, 38); // "#9e9e9e"
+
+$gray-light: $gutter-text;
+$gray-dark: mix($page-text, $page, 62%);
+
 
 $bg-fade: 0.76;
 
