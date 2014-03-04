@@ -1,83 +1,30 @@
 @name "Writerly - Wannabe (Light)";
 @author "Alex Armstrong";
 
-/*
-- Page:
-	- #F4F1EB
-	- #f5f2eb
-	- #F5F2EC
-
-- Cyan: #23C897
-- Berry: #E41E91
-- Gray: #999999
-- Blue: #2DAEE1
-	- $orange: #e1602d;
-	- $green: #54e12d; // #aee12d
-	- $violet: #ba2de1;
-	- $magenta: #e12dae; // #e12d66
-	- $yellow: #e1cc2d;
-	- $cyan: #2de1a8; // #2de1cc
-	- $dark-blue: #2d42e1; // #2d66e1
-*/
-
-// $cyan: #23C897;
-// $magenta: #E41E91;
-// $gray: #999999;
-// $blue: #2DAEE1;
-
-
-// Old
-
-
 // Colors
-$hotpink: #fe57a1;
-$gray9a: hsl(0, 0, 94%);
-$gray9b: hsl(0, 0, 91%);
-$gray8:  hsl(0, 0, 85%);
-$gray7:  hsl(0, 0, 76%);
-$gray6:  hsl(0, 0, 62%);
-$gray3:  hsl(0, 0, 38%);
-$gray2:  hsl(0, 0, 24%);
-$gray1:  hsl(0, 0, 15%);
-$gray0a: hsl(0, 0, 9%);
-$gray0b: hsl(0, 0, 6%);
-
-$hotblue: #00aeff;
-
-$blue: #268bd2;
-$cyan: #2aa198;
-// $gray-dark: #616161;
-// $gray-light: #9e9e9e; // same as: gutter-text
-$green: #738d00;
-$magenta: #d33682;
-$orange: #cb4b16;
-$red: #dc322f;
-$violet: #6c71c4;
-$yellow: #b58900;
-
+@import "colors/solarized";
+$green:   #859900;
+$hotpink: #fe57a1; // used for testing purposes
+$hotblue: #00aeff; // used for the caret and other shiny things
 
 $caret: $hotblue;
-
-// $page:     hsl(0, 0, 96.5%);
-$page:        #F9F7F2; // #f6f6f6; // #f5f2eb;
-$page-text:   hsl(hue(invert($page)), saturation(invert($page)), 24%); // $gray2; // invert($page); // $gray2;
-$gutter:      desaturate(darken($page, 3), 3); // darken($page, 6); // "#eeeeee"
-$gutter-text: mix($page-text, $page, 38%); // $gray-light; // lighten($page-text, 38); // "#9e9e9e"
-
-$gray-light: $gutter-text;
-$gray-dark: mix($page-text, $page, 62%);
-
+$page:        hsl(0, 0, 96.5%); // #f6f6f6; // #F9F7F2; // #f5f2eb;
+$page-text:   hsl(hue(invert($page)), saturation(invert($page)), 24%); // $gray2;  // "#3d3d3d"
+$gray-light:  lighten($page-text, 38%); // mix($page-text, $page, 47.5%); // "#9e9e9e"
+$gray-dark:   lighten($page-text, 14%); // mix($page-text, $page, 80.5%); // "#616161"
+$gutter:      hsla(0,0,0, 0.0275); //desaturate(darken($page, 3), 3); // "#eeeeee"
+$gutter-text: $gray-light;
 
 $bg-fade: 0.76;
 
 * {
-	caret: $caret;
-	background: $page;
-	foreground: $page-text;
-	gutter: $gutter;
+	caret:            $caret;
+	background:       $page;
+	foreground:       $page-text;
+	gutter:           $gutter;
 	gutterForeground: $gutter-text;
-	lineHighlight: $gutter;
-	invisibles: $hotpink; // doesn't do anything
+	lineHighlight:    $gutter;
+	invisibles:       $hotpink; // doesn't do anything
 
 	/* Guides */
 	guide:       transparentize($page-text, .85); // '#9e9e9e66';
@@ -170,8 +117,8 @@ markup.deleted
 color.magenta,
 keyword,
 storage,
-entity.name.tag/*,
-constant.numeric.line-number.find-in-files - match*/
+entity.name.tag
+constant.numeric.line-number.find-in-files - match
 {
 	name: "Magenta";
 	foreground: $magenta;
