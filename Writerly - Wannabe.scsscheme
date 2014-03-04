@@ -59,7 +59,7 @@ $bg-fade: 0.76;
 
 string.other.link.inline
 {
-	name: "Black";
+	@name "Black";
 	foreground: $page-text;
 }
 
@@ -72,7 +72,7 @@ markup.separator,
 markup.strikethrough,
 markup.comment
 {
-	name: "Gray (Light)";
+	@name "Gray (Light)";
 	foreground: $gray-light;
 }
 
@@ -87,14 +87,14 @@ string.other.link.title,
 punctuation.definition.list.task.checkbox.incomplete,
 markup.all-caps
 {
-	name: "Gray (Dark)";
+	@name "Gray (Dark)";
 	foreground: $gray-dark;
 }
 
 color.yellow,
 markup.changed
 {
-	name: "Yellow";
+	@name "Yellow";
 	foreground: $yellow;
 }
 
@@ -103,14 +103,14 @@ string,
 variable.parameter,
 variable.other
 {
-	name: "Orange";
+	@name "Orange";
 	foreground: $orange;
 }
 
 color.red,
 markup.deleted
 {
-	name: "Red";
+	@name "Red";
 	foreground: $red;
 }
 
@@ -118,9 +118,9 @@ color.magenta,
 keyword,
 storage,
 entity.name.tag
-constant.numeric.line-number.find-in-files - match
+constant.numeric.line-number.find-in-files '-' match
 {
-	name: "Magenta";
+	@name "Magenta";
 	foreground: $magenta;
 }
 
@@ -133,7 +133,7 @@ markup.underline.link.reference,
 markup.highlight,
 constant.character.escape
 {
-	name: "Violet";
+	@name "Violet";
 	foreground: $violet;
 }
 
@@ -146,13 +146,13 @@ support.class,
 entity.name.filename.find-in-files,
 markup.underline.link
 {
-	name: "Blue";
+	@name "Blue";
 	foreground: $blue;
 }
 
 color.cyan
 {
-	name: "Cyan";
+	@name "Cyan";
 	foreground: $cyan;
 }
 
@@ -164,7 +164,7 @@ entity.other.attribute-name,
 markup.inserted,
 string.addition
 {
-	name: "Green";
+	@name "Green";
 	foreground: $green;
 }
 
@@ -173,64 +173,64 @@ string.addition
 bgcolor.gray,
 markup.strikethrough
 {
-	name: "Reversed Gray (Light)";
+	@name "Reversed Gray (Light)";
 	background: transparentize($gray-light, $bg-fade);
 }
 
 bgcolor.darkgray
 {
-	name: "Reversed Gray (Dark)";
+	@name "Reversed Gray (Dark)";
 	background: transparentize($gray-dark, $bg-fade);
 }
 
 bgcolor.yellow
 {
-	name: "Reversed Yellow";
+	@name "Reversed Yellow";
 	background: transparentize($yellow, $bg-fade);
 }
 
 bgcolor.orange
 {
-	name: "Reversed Orange";
+	@name "Reversed Orange";
 	background: transparentize($orange, $bg-fade);
 }
 
 bgcolor.red,
 invalid
 {
-	name: "Reversed Red";
+	@name "Reversed Red";
 	background: transparentize($red, $bg-fade);
 }
 
 bgcolor.magenta,
 invalid.deprecated
 {
-	name: "Reversed Magenta";
+	@name "Reversed Magenta";
 	background: transparentize($magenta, $bg-fade);
 }
 
 bgcolor.violet,
 constant.character.hard-line-break
 {
-	name: "Reversed Violet";
+	@name "Reversed Violet";
 	background: transparentize($violet, $bg-fade);
 }
 
 bgcolor.blue
 {
-	name: "Reversed Blue";
+	@name "Reversed Blue";
 	background: transparentize($blue, $bg-fade);
 }
 
 bgcolor.cyan
 {
-	name: "Reversed Cyan";
+	@name "Reversed Cyan";
 	background: transparentize($cyan, $bg-fade);
 }
 
 bgcolor.green
 {
-	name: "Reversed Green";
+	@name "Reversed Green";
 	background: transparentize($green, $bg-fade);
 }
 
@@ -243,7 +243,7 @@ markup.bold,
 markup.quote markup.italic markup.bold,
 markup.quote markup.bold markup.italic,
 markup.all-caps {
-	name: "Bold";
+	@name "Bold";
 	fontStyle: bold;
 }
 /* text.html.markdown punctuation */
@@ -255,7 +255,7 @@ support.class,
 variable.parameter,
 markup.italic,
 markup.quote {
-	name: "Italic";
+	@name "Italic";
 	fontStyle: italic;
 }
 
@@ -263,7 +263,7 @@ style.underline,
 entity.name.class,
 entity.other.inherited-class,
 markup.inserted {
-	name: "Underline";
+	@name "Underline";
 	fontStyle: underline;
 }
 
@@ -272,13 +272,13 @@ style.bold.italic markup.bold markup.italic,
 markup.italic markup.bold,
 markup.quote markup.bold,
 markup.heading markup.italic {
-	name: "Bold & Italic";
+	@name "Bold & Italic";
 	fontStyle: italic bold;
 }
 
 style.italic.underline,
 entity.other.inherited-class {
-	name: "Italic & Underline";
+	@name "Italic & Underline";
 	fontStyle: italic underline;
 }
 
@@ -286,6 +286,6 @@ style.none,
 support.other.variable,
 markup.quote markup.italic,
 text.html.markdown punctuation {
-	name: "No Font Style (Roman)";
+	@name "No Font Style (Roman)";
 	// fontStyle: " ";
 }
