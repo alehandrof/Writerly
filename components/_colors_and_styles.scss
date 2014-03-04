@@ -1,0 +1,49 @@
+/**
+ * Colors  & Styles
+ * Use for quick prototyping
+ */
+
+
+@mixin fg($color) {
+	color: $color;
+}
+
+@mixin bg($color) {
+	background: transparentize($color, 0.76);
+}
+
+@mixin bold {
+	@include fg($gray-dark);
+	fontStyle: bold;
+}
+
+bg.blue       {	@include bg($blue); }
+bg.cyan       {	@include bg($cyan); }
+bg.gray-dark  {	@include bg($gray-dark); }
+bg.gray-light {	@include bg($gray-light); }
+bg.gray       {	@include bg($gray-light); }
+bg.green      {	@include bg($green); }
+bg.magenta    {	@include bg($magenta); }
+bg.orange     {	@include bg($orange); }
+bg.red        {	@include bg($red); }
+bg.violet     {	@include bg($violet); }
+bg.yellow     {	@include bg($yellow); }
+blue          {	@include fg($blue); }
+cyan          {	@include fg($cyan); }
+gray-dark     {	@include fg($gray-dark); }
+gray-light    {	@include fg($gray-light); }
+gray          {	@include fg($gray-light); }
+green         {	@include fg($green); }
+magenta       {	@include fg($magenta); }
+orange        {	@include fg($orange); }
+red           {	@include fg($red); }
+violet        {	@include fg($violet); }
+yellow        {	@include fg($yellow); }
+
+bold {
+	@include bold;
+}
+
+italic {
+	fontStyle: italic;
+}

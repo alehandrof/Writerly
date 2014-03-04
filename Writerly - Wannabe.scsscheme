@@ -18,7 +18,9 @@ $gutter-text:     $gray-light;
 
 // $gutter:  // complement($caret); //"#ffc71977";
 
-$bg-fade: 0.76;
+@import "components/colors_and_styles";
+
+/* ! Basic Settings */
 
 * {
 	caret:            $caret;
@@ -61,23 +63,16 @@ $bg-fade: 0.76;
 /* Styles by Color */
 
 string.other.link.inline {
-	@name "Black";
 	foreground: $page-text;
 }
 
-color.gray,
-comment,
-meta.diff,
-meta.diff.header,
 text.html.markdown punctuation,
 markup.separator,
 markup.strikethrough,
 markup.comment {
-	@name "Gray (Light)";
 	foreground: $gray-light;
 }
 
-color.darkgray,
 style.bold,
 markup.heading,
 markup.bold,
@@ -87,139 +82,117 @@ markup.quote,
 string.other.link.title,
 punctuation.definition.list.task.checkbox.incomplete,
 markup.all-caps {
-	@name "Gray (Dark)";
 	foreground: $gray-dark;
 }
 
-color.yellow,
-markup.changed {
-	@name "Yellow";
-	foreground: $yellow;
+/* ! Core */
+
+comment {
+	foreground: $gray-light;
 }
 
-color.orange,
-string,
-variable.parameter,
-variable.other {
-	@name "Orange";
-	foreground: $orange;
+constant {
+	&.character,
+	&.language,
+	&.numeric,
+	&.other {
+		foreground: $violet;
+	}
+
+	&.character.escape {
+		foreground: $violet;
+	}
 }
 
-color.red,
-markup.deleted {
-	@name "Red";
-	foreground: $red;
+entity {
+	&.name.tag {
+		foreground: $magenta;
+	}
+	&.name.class,
+	&.name.function,
+	&.other.attribute-name,
+	&.other.inherited-class {
+		foreground: $green;
+	}
+
+	&.other.inherited-class {
+		fontStyle: italic;
+	}
 }
 
-color.magenta,
-keyword,
-storage,
-entity.name.tag
-constant.numeric.line-number.find-in-files '-' match {
-	@name "Magenta";
+invalid {
+	@include bg($red);
+
+	&.deprecated {
+		@include bg($magenta);
+	}
+}
+
+keyword {
 	foreground: $magenta;
 }
 
-color.purple,
-constant.numeric,
-constant.language,
-constant.character,
-constant.other,
-markup.underline.link.reference,
-markup.highlight,
-constant.character.escape {
-	@name "Violet";
-	foreground: $violet;
+storage {
+	foreground: $magenta;
+	&.type {
+		fontStyle: italic;
+		foreground: $blue;
+	}
 }
 
-color.blue,
-storage.type,
-support.function,
-support.constant,
-support.type,
-support.class,
-entity.name.filename.find-in-files,
-markup.underline.link {
-	@name "Blue";
-	foreground: $blue;
+string  {
+	foreground: $orange;
+
+	&.addition {
+		foreground: $green;
+	}
 }
 
-color.cyan {
-	@name "Cyan";
-	foreground: $cyan;
+support {
+	&.class,
+	&.constant,
+	&.function,
+	&.type {
+		foreground: $blue;
+	}
+
+	&.class,
+	&.type {
+		fontStyle: italic;
+	}
 }
 
-color.green,
-entity.name.class,
-entity.other.inherited-class,
-entity.name.function,
-entity.other.attribute-name,
-markup.inserted,
-string.addition {
-	@name "Green";
-	foreground: $green;
+variable {
+	&.other,
+	&.parameter {
+		foreground: $orange;
+	}
+
+	&.parameter {
+		fontStyle: italic;
+	}
 }
 
-/* Reversed Colors */
 
-bgcolor.gray,
-markup.strikethrough {
-	@name "Reversed Gray (Light)";
-	background: transparentize($gray-light, $bg-fade);
+/* Markup */
+markup {
+	&.italic,
+	&.quote {
+		fontStyle: italic;
+	}
+
+	&.underline.link {
+		foreground: $blue;
+		&.reference {
+			foreground: $violet;
+		}
+	}
 }
 
-bgcolor.darkgray {
-	@name "Reversed Gray (Dark)";
-	background: transparentize($gray-dark, $bg-fade);
-}
-
-bgcolor.yellow {
-	@name "Reversed Yellow";
-	background: transparentize($yellow, $bg-fade);
-}
-
-bgcolor.orange {
-	@name "Reversed Orange";
-	background: transparentize($orange, $bg-fade);
-}
-
-bgcolor.red,
-invalid {
-	@name "Reversed Red";
-	background: transparentize($red, $bg-fade);
-}
-
-bgcolor.magenta,
-invalid.deprecated {
-	@name "Reversed Magenta";
-	background: transparentize($magenta, $bg-fade);
-}
-
-bgcolor.violet,
-constant.character.hard-line-break {
-	@name "Reversed Violet";
-	background: transparentize($violet, $bg-fade);
-}
-
-bgcolor.blue {
-	@name "Reversed Blue";
-	background: transparentize($blue, $bg-fade);
-}
-
-bgcolor.cyan {
-	@name "Reversed Cyan";
-	background: transparentize($cyan, $bg-fade);
-}
-
-bgcolor.green {
-	@name "Reversed Green";
-	background: transparentize($green, $bg-fade);
-}
-
-/* Styles by Font */
+/* Styles by Font -- not done */
 
 // Bold
-style.bold,
+/* text.html.markdown punctuation */
 markup.heading,
 markup.bold,
 markup.quote markup.italic markup.bold,
@@ -228,27 +201,6 @@ markup.all-caps {
 	@name "Bold";
 	fontStyle: bold;
 }
-/* text.html.markdown punctuation */
-
-style.italic,
-storage.type,
-support.type,
-support.class,
-variable.parameter,
-markup.italic,
-markup.quote {
-	@name "Italic";
-	fontStyle: italic;
-}
-
-style.underline,
-entity.name.class,
-entity.other.inherited-class,
-markup.inserted {
-	@name "Underline";
-	fontStyle: underline;
-}
-
 
 style.bold.italic,
 markup.bold markup.italic,
@@ -259,12 +211,8 @@ markup.heading markup.italic {
 	fontStyle: italic bold;
 }
 
-style.italic.underline,
-entity.other.inherited-class {
-	@name "Italic & Underline";
-	fontStyle: italic underline;
-}
 
+/* Pending fix */
 style.none,
 support.other.variable,
 markup.quote markup.italic,
@@ -272,3 +220,70 @@ text.html.markdown punctuation {
 	@name "No Font Style (Roman)";
 	// fontStyle: " ";
 }
+
+
+/* ! Typewriter Markdown & other custom stuff */
+
+markup {
+	&.strikethrough {
+		@include bg($gray-light);
+	}
+
+	// Critic Markup
+
+	&.changed {
+		foreground: $yellow;
+	}
+
+	&.deleted {
+		foreground: $red;
+	}
+
+	&.highlight {
+		foreground: $violet;
+	}
+
+	&.inserted  {
+		foreground: $green;
+	}
+}
+
+constant.character.hard-line-break {
+	@include bg($violet);
+}
+
+/* ! Syntax: Diff */
+
+meta.diff,
+meta.diff.header {
+	foreground: $gray-light;
+}
+
+
+/* ! Syntax: Find in Files */
+
+entity.name.filename.find-in-files {
+	foreground: $blue;
+}
+
+constant.numeric.line-number.find-in-files '-' match {
+	foreground: $magenta;
+}
+
+
+
+
+/* Underline is not used in Sublime */
+/*
+style.underline,
+entity.name.class,
+entity.other.inherited-class,
+markup.inserted {
+	fontStyle: underline;
+}
+style.italic.underline,
+entity.other.inherited-class {
+	@name "Italic & Underline";
+	fontStyle: italic underline;
+}
+*/
