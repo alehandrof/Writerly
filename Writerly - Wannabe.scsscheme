@@ -7,13 +7,16 @@ $green:   #859900;
 $hotpink: #fe57a1; // used for testing purposes
 $hotblue: #00aeff; // used for the caret and other shiny things
 
-$caret: $hotblue;
-$page:        hsl(0, 0, 96.5%); // #f6f6f6; // #F9F7F2; // #f5f2eb;
-$page-text:   hsl(hue(invert($page)), saturation(invert($page)), 24%); // $gray2;  // "#3d3d3d"
-$gray-light:  lighten($page-text, 38%); // mix($page-text, $page, 47.5%); // "#9e9e9e"
-$gray-dark:   lighten($page-text, 14%); // mix($page-text, $page, 80.5%); // "#616161"
-$gutter:      hsla(0,0,0, 0.0275); //desaturate(darken($page, 3), 3); // "#eeeeee"
-$gutter-text: $gray-light;
+$caret:           $hotblue;
+$page:            hsl(0, 0, 96.5%); // #f6f6f6; // #F9F7F2; // #f5f2eb;
+$page-text:       hsl(hue(invert($page)), saturation(invert($page)), 24%); // $gray2;  // "#3d3d3d"
+$gray-very-light: lighten($page-text, 62%); // #dbdbdb;
+$gray-light:      lighten($page-text, 38%); // mix($page-text, $page, 47.5%); // "#9e9e9e"
+$gray-dark:       lighten($page-text, 14%); // mix($page-text, $page, 80.5%); // "#616161"
+$gutter:          hsla(0,0,0, 0.0275); //desaturate(darken($page, 3), 3); // "#eeeeee"
+$gutter-text:     $gray-light;
+
+// $gutter:  // complement($caret); //"#ffc71977";
 
 $bg-fade: 0.76;
 
@@ -27,18 +30,18 @@ $bg-fade: 0.76;
 	invisibles:       $hotpink; // doesn't do anything
 
 	/* Guides */
-	guide:       transparentize($page-text, .85); // '#9e9e9e66';
-	activeGuide: transparentize($page-text, .62); // '#61616166';
-	stackGuide:  transparentize($page-text, .85); // '#9e9e9e66';
+	guide:       $gray-very-light;
+	activeGuide: $gray-light;
+	stackGuide:  $gray-very-light;
 
 	/* Selection */
-	selection: transparentize($caret, .85); //'#00aeff22';
-	selectionBorder: transparentize($caret, .38); // '#00aeff55';
-	inactiveSelection: '#9e9e9e33';
+	selection:         transparentize($caret, .85); //'#00aeff22';
+	selectionBorder:   transparentize($caret, .38); // '#00aeff55';
+	inactiveSelection: $gutter; // '#9e9e9e33';
 
 	/* Find */
-	findHighlight: '#ffc71977';
-	findHighlightForeground: #684f00;
+	findHighlight:           lighten($yellow, 38%); // ~ '#ffc71977';
+	findHighlightForeground: darken($yellow, 15%); // ~ #684f00;
 
 	/* Brackets & Tags */
 	// See also: https://www.sublimetext.com/forum/viewtopic.php?f=2&t=3007#p14196
@@ -268,7 +271,8 @@ markup.inserted {
 }
 
 
-style.bold.italic markup.bold markup.italic,
+style.bold.italic,
+markup.bold markup.italic,
 markup.italic markup.bold,
 markup.quote markup.bold,
 markup.heading markup.italic {
