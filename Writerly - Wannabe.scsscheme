@@ -60,8 +60,7 @@ $bg-fade: 0.76;
 
 /* Styles by Color */
 
-string.other.link.inline
-{
+string.other.link.inline {
 	@name "Black";
 	foreground: $page-text;
 }
@@ -73,8 +72,7 @@ meta.diff.header,
 text.html.markdown punctuation,
 markup.separator,
 markup.strikethrough,
-markup.comment
-{
+markup.comment {
 	@name "Gray (Light)";
 	foreground: $gray-light;
 }
@@ -88,15 +86,13 @@ markup.raw,
 markup.quote,
 string.other.link.title,
 punctuation.definition.list.task.checkbox.incomplete,
-markup.all-caps
-{
+markup.all-caps {
 	@name "Gray (Dark)";
 	foreground: $gray-dark;
 }
 
 color.yellow,
-markup.changed
-{
+markup.changed {
 	@name "Yellow";
 	foreground: $yellow;
 }
@@ -104,15 +100,13 @@ markup.changed
 color.orange,
 string,
 variable.parameter,
-variable.other
-{
+variable.other {
 	@name "Orange";
 	foreground: $orange;
 }
 
 color.red,
-markup.deleted
-{
+markup.deleted {
 	@name "Red";
 	foreground: $red;
 }
@@ -121,8 +115,7 @@ color.magenta,
 keyword,
 storage,
 entity.name.tag
-constant.numeric.line-number.find-in-files '-' match
-{
+constant.numeric.line-number.find-in-files '-' match {
 	@name "Magenta";
 	foreground: $magenta;
 }
@@ -134,8 +127,7 @@ constant.character,
 constant.other,
 markup.underline.link.reference,
 markup.highlight,
-constant.character.escape
-{
+constant.character.escape {
 	@name "Violet";
 	foreground: $violet;
 }
@@ -147,14 +139,12 @@ support.constant,
 support.type,
 support.class,
 entity.name.filename.find-in-files,
-markup.underline.link
-{
+markup.underline.link {
 	@name "Blue";
 	foreground: $blue;
 }
 
-color.cyan
-{
+color.cyan {
 	@name "Cyan";
 	foreground: $cyan;
 }
@@ -165,8 +155,7 @@ entity.other.inherited-class,
 entity.name.function,
 entity.other.attribute-name,
 markup.inserted,
-string.addition
-{
+string.addition {
 	@name "Green";
 	foreground: $green;
 }
@@ -174,65 +163,55 @@ string.addition
 /* Reversed Colors */
 
 bgcolor.gray,
-markup.strikethrough
-{
+markup.strikethrough {
 	@name "Reversed Gray (Light)";
 	background: transparentize($gray-light, $bg-fade);
 }
 
-bgcolor.darkgray
-{
+bgcolor.darkgray {
 	@name "Reversed Gray (Dark)";
 	background: transparentize($gray-dark, $bg-fade);
 }
 
-bgcolor.yellow
-{
+bgcolor.yellow {
 	@name "Reversed Yellow";
 	background: transparentize($yellow, $bg-fade);
 }
 
-bgcolor.orange
-{
+bgcolor.orange {
 	@name "Reversed Orange";
 	background: transparentize($orange, $bg-fade);
 }
 
 bgcolor.red,
-invalid
-{
+invalid {
 	@name "Reversed Red";
 	background: transparentize($red, $bg-fade);
 }
 
 bgcolor.magenta,
-invalid.deprecated
-{
+invalid.deprecated {
 	@name "Reversed Magenta";
 	background: transparentize($magenta, $bg-fade);
 }
 
 bgcolor.violet,
-constant.character.hard-line-break
-{
+constant.character.hard-line-break {
 	@name "Reversed Violet";
 	background: transparentize($violet, $bg-fade);
 }
 
-bgcolor.blue
-{
+bgcolor.blue {
 	@name "Reversed Blue";
 	background: transparentize($blue, $bg-fade);
 }
 
-bgcolor.cyan
-{
+bgcolor.cyan {
 	@name "Reversed Cyan";
 	background: transparentize($cyan, $bg-fade);
 }
 
-bgcolor.green
-{
+bgcolor.green {
 	@name "Reversed Green";
 	background: transparentize($green, $bg-fade);
 }
