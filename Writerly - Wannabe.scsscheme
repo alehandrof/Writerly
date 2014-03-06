@@ -1,12 +1,12 @@
 @name "Writerly - Wannabe (Light)";
 @author "Alex Armstrong";
 
-// Colors
-@import "colors/solarized";
-$green:   #859900;
-$hotpink: #fe57a1; // used for testing purposes
-$hotblue: #00aeff; // used for the caret and other shiny things
+/* !Colors */
 
+@import "colors/solarized";
+$green:           #859900;
+$hotpink:         #fe57a1; // used for testing purposes
+$hotblue:         #00aeff; // used for the caret and other shiny things
 $caret:           $hotblue;
 $page:            hsl(0, 0, 96.5%); // #f6f6f6; // #F9F7F2; // #f5f2eb;
 $page-text:       hsl(hue(invert($page)), saturation(invert($page)), 24%); // $gray2;  // "#3d3d3d"
@@ -15,8 +15,6 @@ $gray-light:      lighten($page-text, 38%); // mix($page-text, $page, 47.5%); //
 $gray-dark:       lighten($page-text, 14%); // mix($page-text, $page, 80.5%); // "#616161"
 $gutter:          hsla(0,0,0, 0.0275); //desaturate(darken($page, 3), 3); // "#eeeeee"
 $gutter-text:     $gray-light;
-
-// $gutter:  // complement($caret); //"#ffc71977";
 
 @import "components/colors_and_styles";
 
@@ -29,7 +27,7 @@ $gutter-text:     $gray-light;
 	gutter:           $gutter;
 	gutterForeground: $gutter-text;
 	lineHighlight:    $gutter;
-	invisibles:       $hotpink; // doesn't do anything
+	invisibles:       $hotpink; // doesn't do anything in ST2/3
 
 	/* Guides */
 	guide:       $gray-very-light;
@@ -37,7 +35,7 @@ $gutter-text:     $gray-light;
 	stackGuide:  $gray-very-light;
 
 	/* Selection */
-	selection:         transparentize($caret, .85); //'#00aeff22';
+	selection:         transparentize($caret, .85); // '#00aeff22';
 	selectionBorder:   transparentize($caret, .38); // '#00aeff55';
 	inactiveSelection: $gutter; // '#9e9e9e33';
 
@@ -48,44 +46,19 @@ $gutter-text:     $gray-light;
 	/* Brackets & Tags */
 	// See also: https://www.sublimetext.com/forum/viewtopic.php?f=2&t=3007#p14196
 	bracketContentsForeground: $caret;
-	bracketContentsOptions: underline;
-	bracketsForeground: $caret;
-	bracketsOptions: underline;
-	tagsForeground: $caret;
-	tagsOptions: underline;
+	bracketContentsOptions:    underline;
+	bracketsForeground:        $caret;
+	bracketsOptions:           underline;
+	tagsForeground:            $caret;
+	tagsOptions:               underline;
 
 	/* Shadow */
-	shadow: $gutter-text;
+	shadow:      $gutter-text;
 	shadowWidth: "4";
 }
 
 
-/* Styles by Color */
-
-string.other.link.inline {
-	foreground: $page-text;
-}
-
-text.html.markdown punctuation,
-markup.separator,
-markup.strikethrough,
-markup.comment {
-	foreground: $gray-light;
-}
-
-style.bold,
-markup.heading,
-markup.bold,
-markup.quote markup.italic markup.bold,
-markup.raw,
-markup.quote,
-string.other.link.title,
-punctuation.definition.list.task.checkbox.incomplete,
-markup.all-caps {
-	foreground: $gray-dark;
-}
-
-/* ! Core */
+/* ! Core Selectors */
 
 comment {
 	foreground: $gray-light;
@@ -116,7 +89,7 @@ entity {
 	}
 
 	&.other.inherited-class {
-		fontStyle: italic;
+		@include style(italic);
 	}
 }
 
@@ -132,10 +105,53 @@ keyword {
 	foreground: $magenta;
 }
 
+markup {
+	&.separator,
+	&.strikethrough,
+	&.comment {
+		foreground: $gray-light;
+	}
+
+	&.raw,
+	&.quote {
+		foreground: $gray-dark;
+	}
+
+	&.underline.link {
+		foreground: $blue;
+		&.reference {
+			foreground: $violet;
+		}
+	}
+
+	&.italic,
+	&.quote {
+		@include style(italic);
+	}
+
+	&.heading,
+	&.bold,
+	&.quote markup.italic markup.bold,
+	&.quote markup.bold markup.italic {
+		@include style(bold);
+	}
+
+	&.bold markup.italic,
+	&.italic markup.bold,
+	&.quote markup.bold,
+	&.heading markup.italic {
+		@include style(bold italic);
+	}
+
+	&.quote markup.italic {
+		@include style(none);
+	}
+}
+
 storage {
 	foreground: $magenta;
 	&.type {
-		fontStyle: italic;
+		@include style(italic);
 		foreground: $blue;
 	}
 }
@@ -158,7 +174,11 @@ support {
 
 	&.class,
 	&.type {
-		fontStyle: italic;
+		@include style(italic);
+	}
+
+	&.other.variable {
+		@include style(none); // why is this needed?
 	}
 }
 
@@ -169,60 +189,18 @@ variable {
 	}
 
 	&.parameter {
-		fontStyle: italic;
+		@include style(italic);
 	}
 }
 
 
-/* Markup */
-markup {
-	&.italic,
-	&.quote {
-		fontStyle: italic;
-	}
+/* ! Syntax: Markdown (Typewriter) & other custom stuff */
 
-	&.underline.link {
-		foreground: $blue;
-		&.reference {
-			foreground: $violet;
-		}
-	}
-}
-
-/* Styles by Font -- not done */
-
-// Bold
-/* text.html.markdown punctuation */
-markup.heading,
-markup.bold,
-markup.quote markup.italic markup.bold,
-markup.quote markup.bold markup.italic,
-markup.all-caps {
-	@name "Bold";
-	fontStyle: bold;
-}
-
-style.bold.italic,
-markup.bold markup.italic,
-markup.italic markup.bold,
-markup.quote markup.bold,
-markup.heading markup.italic {
-	@name "Bold & Italic";
-	fontStyle: italic bold;
-}
-
-
-/* Pending fix */
-style.none,
-support.other.variable,
-markup.quote markup.italic,
 text.html.markdown punctuation {
-	@name "No Font Style (Roman)";
-	// fontStyle: " ";
+	// @include style(bold);
+	foreground: $gray-light;
+	@include style(none);
 }
-
-
-/* ! Typewriter Markdown & other custom stuff */
 
 markup {
 	&.strikethrough {
@@ -248,9 +226,20 @@ markup {
 	}
 }
 
+string.other.link {
+	&.inline {
+		foreground: $page-text;
+	}
+
+	&.title {
+		foreground: $gray-dark;
+	}
+}
+
 constant.character.hard-line-break {
 	@include bg($violet);
 }
+
 
 /* ! Syntax: Diff */
 

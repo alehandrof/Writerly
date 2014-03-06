@@ -12,9 +12,21 @@
 	background: transparentize($color, 0.76);
 }
 
-@mixin bold {
-	@include fg($gray-dark);
-	fontStyle: bold;
+@mixin style($style) {
+	@if $style == bold {
+		@include fg($gray-dark);
+		fontStyle: bold;
+	}
+	@else if $style == italic {
+		fontStyle: italic;
+	}
+	@else if $style == bold italic {
+		@include fg($gray-dark);
+		fontStyle: bold italic;
+	}
+	@else if $style == none {
+		// fontStyle: ;
+	}
 }
 
 bg.blue       {	@include bg($blue); }
@@ -41,9 +53,14 @@ violet        {	@include fg($violet); }
 yellow        {	@include fg($yellow); }
 
 bold {
-	@include bold;
+	@include style(bold);
 }
 
 italic {
-	fontStyle: italic;
+	@include style(italic);
+}
+
+bold.italic,
+italic.bold {
+	@include style(bold italic);
 }
