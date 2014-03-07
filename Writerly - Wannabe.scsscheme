@@ -88,6 +88,7 @@ entity {
 		foreground: $green;
 	}
 
+	&.name.class,
 	&.other.inherited-class {
 		@include style(italic);
 	}
@@ -222,6 +223,7 @@ markup {
 	}
 
 	&.inserted  {
+		@include style(italic);
 		foreground: $green;
 	}
 }
@@ -258,21 +260,3 @@ entity.name.filename.find-in-files {
 constant.numeric.line-number.find-in-files '-' match {
 	foreground: $magenta;
 }
-
-
-
-
-/* Underline is not used in Sublime */
-/*
-style.underline,
-entity.name.class,
-entity.other.inherited-class,
-markup.inserted {
-	fontStyle: underline;
-}
-style.italic.underline,
-entity.other.inherited-class {
-	@name "Italic & Underline";
-	fontStyle: italic underline;
-}
-*/
