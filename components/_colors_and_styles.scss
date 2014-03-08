@@ -13,19 +13,10 @@
 }
 
 @mixin style($style) {
-	@if $style == bold {
+	fontStyle: $style;
+
+	@if $style == bold or $style == bold italic {
 		@include fg($gray-dark);
-		fontStyle: bold;
-	}
-	@else if $style == italic {
-		fontStyle: italic;
-	}
-	@else if $style == bold italic {
-		@include fg($gray-dark);
-		fontStyle: bold italic;
-	}
-	@else if $style == none {
-		// fontStyle: ;
 	}
 }
 
