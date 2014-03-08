@@ -15,7 +15,7 @@
 @mixin style($style) {
 	fontStyle: $style;
 
-	@if $style == bold or $style == bold italic {
+	@if index($style, bold) {
 		@include fg($gray-dark);
 	}
 }
