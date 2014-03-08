@@ -260,3 +260,50 @@ entity.name.filename.find-in-files {
 constant.numeric.line-number.find-in-files '-' match {
 	foreground: $magenta;
 }
+
+
+/* ! Plugin: SublimeLinter */
+
+sublimelinter.mark.warning {
+	@name "SublimeLinter Warning";
+	foreground: $yellow; // was: #DDB700;
+}
+
+sublimelinter.mark.error {
+	@name "SublimeLinter Error";
+	foreground: $red; // was: #D02000
+}
+
+sublimelinter.gutter-mark {
+	@name "SublimeLinter Gutter Mark";
+	foreground: $gray-dark; // was: #FFFFFF
+}
+
+
+
+/* ! Plugin: GitGutter */
+
+markup.deleted.git_gutter {
+  @name "GitGutter deleted";
+  foreground: $magenta; // was: #F92672;
+}
+
+markup.inserted.git_gutter {
+  @name "GitGutter inserted";
+  foreground: $green; // was: #A6E22E;
+}
+
+markup.changed.git_gutter {
+  @name "GitGutter changed";
+  foreground: $violet; // was: #967EFB;
+}
+
+markup.ignored.git_gutter {
+  @name "GitGutter ignored";
+  foreground: $gray-dark; // was: #565656;
+}
+
+markup.untracked.git_gutter {
+  @name "GitGutter untracked";
+  foreground: $gray-dark; // was: #565656;
+}
