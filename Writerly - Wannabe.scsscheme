@@ -207,25 +207,6 @@ markup {
 	&.strikethrough {
 		@include bg($gray-light);
 	}
-
-	// Critic Markup
-
-	&.changed {
-		foreground: $yellow;
-	}
-
-	&.deleted {
-		foreground: $red;
-	}
-
-	&.highlight {
-		foreground: $violet;
-	}
-
-	&.inserted  {
-		@include style(italic);
-		foreground: $green;
-	}
 }
 
 string.other.link {
@@ -240,6 +221,32 @@ string.other.link {
 
 constant.character.hard-line-break {
 	@include bg($violet);
+}
+
+/* ! Plugin: GitGutter & Syntax: Markdown (Typewriter), Critic Markup */
+
+markup {
+	&.changed {
+		foreground: $yellow; // $violet (gitgutter)
+	}
+
+	&.deleted {
+		foreground: $red; // $magenta (gitgutter)
+	}
+
+	&.ignored,
+	&.untracked {
+		foreground: $gray-dark;
+	}
+
+	&.inserted  {
+		@include style(italic);
+		foreground: $green;
+	}
+
+	&.highlight {
+		foreground: $violet;
+	}
 }
 
 
@@ -277,33 +284,4 @@ sublimelinter.mark.error {
 sublimelinter.gutter-mark {
 	@name "SublimeLinter Gutter Mark";
 	foreground: $gray-dark; // was: #FFFFFF
-}
-
-
-
-/* ! Plugin: GitGutter */
-
-markup.deleted.git_gutter {
-  @name "GitGutter deleted";
-  foreground: $magenta; // was: #F92672;
-}
-
-markup.inserted.git_gutter {
-  @name "GitGutter inserted";
-  foreground: $green; // was: #A6E22E;
-}
-
-markup.changed.git_gutter {
-  @name "GitGutter changed";
-  foreground: $violet; // was: #967EFB;
-}
-
-markup.ignored.git_gutter {
-  @name "GitGutter ignored";
-  foreground: $gray-dark; // was: #565656;
-}
-
-markup.untracked.git_gutter {
-  @name "GitGutter untracked";
-  foreground: $gray-dark; // was: #565656;
 }
