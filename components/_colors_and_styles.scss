@@ -5,7 +5,7 @@
 
 
 @mixin fg($color) {
-	color: $color;
+	foreground: $color;
 }
 
 @mixin bg($color) {
