@@ -1,4 +1,6 @@
-# Writerly -- Sublime Text color schemes for writers
+# Writerly
+
+## Sublime Text Color Schemes for Writers
 
 This repository is under heavy development; there is no stable `master` branch currently.
 
@@ -7,6 +9,8 @@ This repository is under heavy development; there is no stable `master` branch c
 `Wannabe` is a color scheme for Sublime Text, designed for writers, especially using minimal markup, such as Markdown, but can also be used for some light coding, especially for web stuff (HTML, CSS and the like).
 
 Suggestions and PRs to improve the scheme in these capacities are very welcome. Expanding Wannabe's support for other programming languages will be considered, but is not the main focus.
+
+![https://raw.github.com/alehandrof/Writerly/devel/screenshots/wannabe-20140312-win7-consolas.png](https://raw.github.com/alehandrof/Writerly/devel/screenshots/wannabe-20140312-win7-consolas.png)
 
 ### History & Credits
 
