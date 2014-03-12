@@ -4,10 +4,10 @@
 /* !Colors */
 
 @import "colors/solarized";
+@import "colors/writer_pro";
 $green:           #859900;
-$hotpink:         #fe57a1; // used for testing purposes
-$hotblue:         #00aeff; // used for the caret and other shiny things
-$caret:           $hotblue;
+$error:           $bright-magenta; // used for testing purposes
+$caret:           $bright-blue;
 $page:            hsl(0, 0, 96.5%); // #f6f6f6; // #F9F7F2; // #f5f2eb;
 $page-text:       hsl(hue(invert($page)), saturation(invert($page)), 24%); // $gray2;  // "#3d3d3d"
 $gray-very-light: lighten($page-text, 62%); // #dbdbdb;
@@ -27,7 +27,7 @@ $gutter-text:     $gray-light;
 	gutter:           $gutter;
 	gutterForeground: $gutter-text;
 	lineHighlight:    $gutter;
-	invisibles:       $hotpink; // doesn't do anything in ST2/3
+	invisibles:       $error; // doesn't do anything in ST2/3
 
 	/* Guides */
 	guide:       $gray-very-light;
@@ -284,4 +284,32 @@ sublimelinter.mark.error {
 sublimelinter.gutter-mark {
 	@name "SublimeLinter Gutter Mark";
 	foreground: $gray-dark; // was: #FFFFFF
+}
+
+/* ! Plugin: Bracket Highlighter */
+
+brackethighlighter.default,
+brackethighlighter.curly,
+brackethighlighter.round,
+brackethighlighter.square,
+brackethighlighter.angle,
+brackethighlighter.tag,
+brackethighlighter.quote {
+	foreground: $cyan;
+}
+
+brackethighlighter.unmatched {
+	foreground: $red;
+}
+
+// brackethighlighter.quote {
+// 	foreground: $gray-dark;
+// }
+
+
+/* ! Plugin: RawLineEdit */
+
+glyph.carriage-return,
+glyph.new-line {
+	foreground: $cyan;
 }
