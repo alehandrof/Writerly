@@ -14,7 +14,7 @@
 				<key>activeGuide</key>
 				<string>#9e9e9e</string>
 				<key>background</key>
-				<string>#f6f6f6</string>
+				<string>#f0f0f0</string>
 				<key>bracketContentsForeground</key>
 				<string>#2daee1</string>
 				<key>bracketContentsOptions</key>
@@ -631,24 +631,6 @@
 				<string>bold</string>
 				<key>foreground</key>
 				<string>#616161</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>scope</key>
-			<string>meta.diff.header.from-file</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#dc322f</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>scope</key>
-			<string>meta.diff.header.to-file</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#859900</string>
 			</dict>
 		</dict>
 		<dict>
