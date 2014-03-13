@@ -240,7 +240,7 @@ markup {
 	}
 
 	&.inserted  {
-		@include style(italic);
+		// @include style(italic);
 		foreground: $green;
 	}
 
@@ -252,9 +252,26 @@ markup {
 
 /* ! Syntax: Diff */
 
-meta.diff,
-meta.diff.header {
-	foreground: $gray-light;
+meta.diff {
+	&.header {
+		background: $gutter;
+		&.from-file {
+			foreground: $red;
+		}
+		&.to-file {
+			foreground: $green;
+		}
+	}
+	markup {
+		&.deleted {
+			foreground: $page-text;
+			@include bg($red, 1);
+		}
+		&.inserted  {
+			foreground: $page-text;
+			@include bg($green, 1);
+		}
+	}
 }
 
 

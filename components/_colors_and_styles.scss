@@ -8,8 +8,13 @@
 	foreground: $color;
 }
 
-@mixin bg($color) {
-	background: transparentize($color, 0.76);
+@mixin bg($color, $punctuate: 0) {
+	background: lighten(transparentize($color, 0.85), 9%);
+	@if $punctuate != 0 {
+		punctuation {
+			foreground: $color;
+		}
+	}
 }
 
 @mixin style($style) {
