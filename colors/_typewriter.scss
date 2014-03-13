@@ -1,0 +1,7 @@
+/**
+ * Typewriter
+ * My custom colors
+ */
+
+$typewriter-bg: hsl(0, 0, 96.5%); // #f6f6f6;
+$typewriter-fg: hsl(hue(invert($typewriter-bg)), saturation(invert($typewriter-bg)), 24%); // $gray2;  // "#3d3d3d"

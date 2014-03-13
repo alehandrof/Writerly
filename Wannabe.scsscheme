@@ -3,13 +3,15 @@
 
 /* !Colors */
 
+@import "colors/golden-grayscale";
 @import "colors/solarized";
 @import "colors/writer_pro";
 $green:           #859900;
-$error:           $bright-magenta; // used for testing purposes
-$caret:           $bright-blue;
-$page:            hsl(0, 0, 96.5%); // #f6f6f6; // #F9F7F2; // #f5f2eb;
-$page-text:       hsl(hue(invert($page)), saturation(invert($page)), 24%); // $gray2;  // "#3d3d3d"
+
+$error:           $caret-magenta; // used for testing purposes
+$caret:           $caret-blue;
+$page:            $gray9a;
+$page-text:       $gray2;
 $gray-very-light: lighten($page-text, 62%); // #dbdbdb;
 $gray-light:      lighten($page-text, 38%); // mix($page-text, $page, 47.5%); // "#9e9e9e"
 $gray-dark:       lighten($page-text, 14%); // mix($page-text, $page, 80.5%); // "#616161"
@@ -254,12 +256,13 @@ markup {
 
 meta.diff {
 	&.header {
+		@include style(bold);
 		background: $gutter;
 		&.from-file {
-			foreground: $red;
+			// foreground: $red;
 		}
 		&.to-file {
-			foreground: $green;
+			// foreground: $green;
 		}
 	}
 	markup {
