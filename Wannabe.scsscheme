@@ -42,7 +42,7 @@ $gutter-text:     $gray-light;
 	inactiveSelection: $gutter; // '#9e9e9e33';
 
 	/* Find */
-	findHighlight:           lighten($yellow, 38%); // ~ '#ffc71977';
+	findHighlight:           transparentize(lighten($yellow, 38%), 0.24); // ~ '#ffc71977';
 	findHighlightForeground: darken($yellow, 15%); // ~ #684f00;
 
 	/* Brackets & Tags */
