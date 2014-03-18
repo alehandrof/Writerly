@@ -189,6 +189,7 @@ support {
 }
 
 variable {
+	&.declaration, /* LESS */
 	&.other,
 	&.parameter {
 		foreground: $orange;
