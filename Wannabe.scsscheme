@@ -10,7 +10,7 @@ $green:           #859900;
 
 $error:           $caret-magenta; // used for testing purposes
 $caret:           $caret-blue;
-$page:            $gray9a;
+$page:            #f6f6f6;
 $page-text:       $gray2;
 $gray-very-light: lighten($page-text, 62%); // #dbdbdb;
 $gray-light:      lighten($page-text, 38%); // mix($page-text, $page, 47.5%); // "#9e9e9e"
@@ -161,6 +161,9 @@ storage {
 
 string  {
 	foreground: $orange;
+	punctuation {
+		@include punctuation($orange);
+	}
 
 	&.addition {
 		foreground: $green;
@@ -333,3 +336,12 @@ glyph.carriage-return,
 glyph.new-line {
 	foreground: $cyan;
 }
+
+
+punctuation.definition.tag {
+	@include punctuation($magenta);
+}
+
+// punctuation {
+	// foreground: $gray-dark;
+// }
