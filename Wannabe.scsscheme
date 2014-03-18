@@ -160,9 +160,9 @@ storage {
 }
 
 string  {
-	foreground: $orange;
+	foreground: $yellow;
 	punctuation {
-		@include punctuation($orange);
+		@include punctuation($yellow);
 	}
 
 	&.addition {
@@ -338,10 +338,12 @@ glyph.new-line {
 }
 
 
+/* Make punctuation more interesting */
+
 punctuation.definition.tag {
 	@include punctuation($magenta);
 }
 
-// punctuation {
-	// foreground: $gray-dark;
-// }
+meta.property-value punctuation {
+	// @include punctuation($blue);
+}
