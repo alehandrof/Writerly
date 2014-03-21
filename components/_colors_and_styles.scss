@@ -34,8 +34,8 @@
 bg.blue       {	@include bg($blue); }
 bg.cyan       {	@include bg($cyan); }
 bg.gray-dark  {	@include bg($gray-dark); }
-bg.gray-light {	@include bg($gray-light); }
-bg.gray       {	@include bg($gray-light); }
+bg.gray-light {	@include bg($mid); }
+bg.gray       {	@include bg($mid); }
 bg.green      {	@include bg($green); }
 bg.magenta    {	@include bg($magenta); }
 bg.orange     {	@include bg($orange); }
@@ -45,8 +45,8 @@ bg.yellow     {	@include bg($yellow); }
 blue          {	@include fg($blue); }
 cyan          {	@include fg($cyan); }
 gray-dark     {	@include fg($gray-dark); }
-gray-light    {	@include fg($gray-light); }
-gray          {	@include fg($gray-light); }
+gray-light    {	@include fg($mid); }
+gray          {	@include fg($mid); }
 green         {	@include fg($green); }
 magenta       {	@include fg($magenta); }
 orange        {	@include fg($orange); }
