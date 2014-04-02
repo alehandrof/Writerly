@@ -6,6 +6,7 @@
 @import "colors/gruvbox";
 @import "colors/solarized";
 @import "colors/writer_pro";
+@import "colors/draftin";
 // $green:           #859900;
 
 $dark0: $gb-light-dark0;
@@ -29,7 +30,8 @@ $light4: $gb-light-light4;
 // $cyan: $gb-light-aqua;
 
 
-$bg:                #f6f6f6;
+// $bg:                #f6f6f6;
+$bg:                $light-tan;
 $fg:                #3d3d3d;
 $bg0: invert($fg);
 $fg0: invert($bg);
