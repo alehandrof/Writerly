@@ -102,10 +102,6 @@ constant {
 	&.other {
 		foreground: $violet;
 	}
-
-	&.character.escape {
-		foreground: $violet;
-	}
 }
 
 entity {
@@ -210,10 +206,6 @@ support {
 	&.class,
 	&.type {
 		@include style(italic);
-	}
-
-	&.other.variable {
-		@include style(none); // why is this needed?
 	}
 }
 
