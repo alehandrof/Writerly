@@ -29,23 +29,29 @@ $light4: $gb-light-light4;
 // $violet: $gb-light-purple;
 // $cyan: $gb-light-aqua;
 
-
-// $bg:                #f6f6f6;
-$bg:                $light-tan;
-$fg:                #3d3d3d;
-$bg0: invert($fg);
-$fg0: invert($bg);
-$mid: mix($bg, $fg, 50%);
-
+// $bg:      #f6f6f6;
+$bg:      $light-tan;
+$fg:      #3d3d3d;
+$dark0:   mix($fg, $bg, (1-(5/60*1))*100%);  // #444
+$dark1:   mix($fg, $bg, (1-(5/60*2))*100%);  // #555
+$dark2:   mix($fg, $bg, (1-(5/60*3))*100%);  // #666
+$dark3:   mix($fg, $bg, (1-(5/60*4))*100%);  // #777
+$dark4:   mix($fg, $bg, (1-(5/60*5))*100%);  // #888
+$medium:  mix($fg, $bg, (1-(5/60*6))*100%);  // #999
+$light4:  mix($fg, $bg, (1-(5/60*7))*100%);  // #aaa
+$light3:  mix($fg, $bg, (1-(5/60*8))*100%);  // #bbb
+$light2:  mix($fg, $bg, (1-(5/60*9))*100%);  // #ccc
+$light1:  mix($fg, $bg, (1-(5/60*10))*100%); // #ddd
+$light0:  mix($fg, $bg, (1-(5/60*11))*100%); // #eee
 
 
 $error:             $caret-magenta; // used for testing purposes
 $caret:             $caret-blue;
-$gray-very-light:   lighten($fg, 62%); // #dbdbdb;
+// $gray-very-light:   $light1; // lighten($fg, 62%); // #dbdbdb;
 // $gray-light:        lighten($fg, 38%); // mix($fg, $bg, 47.5%); // "#9e9e9e"
-$gray-dark:         lighten($fg, 14%); // mix($fg, $bg, 80.5%); // "#616161"
+// $gray-dark:         $dark2; // lighten($fg, 14%); // mix($fg, $bg, 80.5%); // "#616161"
 $gutter:            hsla(0,0,0, 0.0275); //desaturate(darken($bg, 3), 3); // "#eeeeee"
-$gutter-text:       $mid;
+$gutter-text:       $medium;
 
 @import "components/colors_and_styles";
 
@@ -56,14 +62,14 @@ $gutter-text:       $mid;
 	background:       $bg;
 	foreground:       $fg;
 	gutter:           $gutter;
-	gutterForeground: $gutter-text;
+	gutterForeground: $medium;
 	lineHighlight:    $gutter;
 	invisibles:       $error; // doesn't do anything in ST2/3
 
 	/* Guides */
-	guide:       $gray-very-light;
-	activeGuide: $mid;
-	stackGuide:  $gray-very-light;
+	guide:       $light1;
+	activeGuide: $medium;
+	stackGuide:  $light1;
 
 	/* Selection */
 	selection:         transparentize($caret, .85); // '#00aeff22';
@@ -84,7 +90,7 @@ $gutter-text:       $mid;
 	tagsOptions:               underline;
 
 	/* Shadow */
-	shadow:      $gutter-text;
+	shadow:      $medium;
 	shadowWidth: "4";
 }
 
@@ -92,7 +98,7 @@ $gutter-text:       $mid;
 /* ! Core Selectors */
 
 comment {
-	foreground: $mid;
+	foreground: $medium;
 }
 
 constant {
@@ -137,12 +143,12 @@ markup {
 	&.separator,
 	&.strikethrough,
 	&.comment {
-		foreground: $mid;
+		foreground: $medium;
 	}
 
 	&.raw,
 	&.quote {
-		foreground: $gray-dark;
+		foreground: $dark2;
 	}
 
 	&.underline.link {
@@ -226,13 +232,13 @@ variable {
 
 text.html.markdown punctuation {
 	// @include style(bold);
-	foreground: $mid;
+	foreground: $medium;
 	@include style(none);
 }
 
 markup {
 	&.strikethrough {
-		@include bg($mid);
+		@include bg($medium);
 	}
 }
 
@@ -242,7 +248,7 @@ string.other.link {
 	}
 
 	&.title {
-		foreground: $gray-dark;
+		foreground: $dark2;
 	}
 }
 
@@ -263,7 +269,7 @@ markup {
 
 	&.ignored,
 	&.untracked {
-		foreground: $gray-dark;
+		foreground: $dark2;
 	}
 
 	&.inserted  {
@@ -328,7 +334,7 @@ sublimelinter.mark.error {
 
 sublimelinter.gutter-mark {
 	@name "SublimeLinter Gutter Mark";
-	foreground: $gray-dark; // was: #FFFFFF
+	foreground: $dark2; // was: #FFFFFF
 }
 
 /* ! Plugin: Bracket Highlighter */
@@ -348,7 +354,7 @@ brackethighlighter.unmatched {
 }
 
 // brackethighlighter.quote {
-// 	foreground: $gray-dark;
+// 	foreground: $dark2;
 // }
 
 

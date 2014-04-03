@@ -27,15 +27,15 @@
 	fontStyle: $style;
 
 	@if index($style, bold) {
-		@include fg($gray-dark);
+		@include fg($dark2);
 	}
 }
 
 bg.blue       {	@include bg($blue); }
 bg.cyan       {	@include bg($cyan); }
-bg.gray-dark  {	@include bg($gray-dark); }
-bg.gray-light {	@include bg($mid); }
-bg.gray       {	@include bg($mid); }
+bg.gray-dark  {	@include bg($dark2); }
+bg.gray-light {	@include bg($medium); }
+bg.gray       {	@include bg($medium); }
 bg.green      {	@include bg($green); }
 bg.magenta    {	@include bg($magenta); }
 bg.orange     {	@include bg($orange); }
@@ -44,9 +44,9 @@ bg.violet     {	@include bg($violet); }
 bg.yellow     {	@include bg($yellow); }
 blue          {	@include fg($blue); }
 cyan          {	@include fg($cyan); }
-gray-dark     {	@include fg($gray-dark); }
-gray-light    {	@include fg($mid); }
-gray          {	@include fg($mid); }
+gray-dark     {	@include fg($dark2); }
+gray-light    {	@include fg($medium); }
+gray          {	@include fg($medium); }
 green         {	@include fg($green); }
 magenta       {	@include fg($magenta); }
 orange        {	@include fg($orange); }
