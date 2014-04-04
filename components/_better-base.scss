@@ -1,15 +1,7 @@
-@name "Writerly - BetterBase";
-@author "Alex Armstrong (@alehandrof)";
+// @name "Writerly - BetterBase";
+// @author "Alex Armstrong (@alehandrof)";
 
 /* !Colors */
-
-@import "colors/solarized";
-@import "colors/writer_pro";
-@import "colors/random";
-
-$bg:    $basecamp-tan;
-$fg:    #3d3d3d;
-$caret: $caret-blue;
 
 $dark0:   mix($fg, $bg, (1-(5/60*1))*100%);  // #444
 $dark1:   mix($fg, $bg, (1-(5/60*2))*100%);  // #555
@@ -27,7 +19,7 @@ $error:       adjust-hue($caret, 130deg);
 $gutter:      hsla(0,0,0, 0.0275); //desaturate(darken($bg, 3), 3); // "#eeeeee"
 $selection:   transparentize($caret, .85);  // '#00aeff22';
 
-@import "components/colors_and_styles";
+@import "components/colors-and-styles";
 
 /* ! Basic Settings */
 
@@ -46,9 +38,9 @@ $selection:   transparentize($caret, .85);  // '#00aeff22';
 
 	/* Selection */
 
-  selection:          $selection;
-  selectionBorder:    opacify($selection, .38);
-  inactiveSelection:  desaturate($selection, 100);
+	selection:          $selection;
+	selectionBorder:    opacify($selection, .38);
+	inactiveSelection:  desaturate($selection, 100);
 
 	/* Find */
 	findHighlight:           transparentize(lighten($yellow, 38%), 0.24); // ~ '#ffc71977';
