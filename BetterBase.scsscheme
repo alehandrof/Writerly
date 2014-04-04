@@ -3,10 +3,10 @@
 
 /* !Colors */
 
-@import "colors/gruvbox";
+// @import "colors/gruvbox";
 @import "colors/solarized";
 @import "colors/writer_pro";
-@import "colors/draftin";
+@import "colors/random";
 // $green:           #859900;
 
 $dark0: $gb-light-dark0;
@@ -29,8 +29,7 @@ $light4: $gb-light-light4;
 // $violet: $gb-light-purple;
 // $cyan: $gb-light-aqua;
 
-// $bg:      #f6f6f6;
-$bg:      $light-tan;
+$bg:      $basecamp-tan;
 $fg:      #3d3d3d;
 $dark0:   mix($fg, $bg, (1-(5/60*1))*100%);  // #444
 $dark1:   mix($fg, $bg, (1-(5/60*2))*100%);  // #555
