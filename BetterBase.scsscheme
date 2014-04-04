@@ -38,7 +38,6 @@ $selection:   transparentize($caret, .85);  // '#00aeff22';
 	gutter:           $gutter;
 	gutterForeground: $medium;
 	lineHighlight:    $gutter;
-	invisibles:       $error; // doesn't do anything in ST2/3
 
 	/* Guides */
 	guide:       $light1;
@@ -67,6 +66,10 @@ $selection:   transparentize($caret, .85);  // '#00aeff22';
 	/* Shadow */
 	shadow:      $medium;
 	shadowWidth: "4";
+
+	/* Invisibles */
+	// Not valid in ST2/3. Value is an approximation of what ST would use.
+	invisibles: transparentize($fg, .745);
 }
 
 
