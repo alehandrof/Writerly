@@ -6,7 +6,7 @@
 @import "colors/random";
 // $green:           #859900;
 
-$bg:    $basecamp-tan;
+$bg:    $amazon-paperwhite;
 $fg:    #3d3d3d;
 $caret: $caret-blue;
 
