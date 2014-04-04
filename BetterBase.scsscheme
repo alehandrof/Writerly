@@ -3,34 +3,14 @@
 
 /* !Colors */
 
-// @import "colors/gruvbox";
 @import "colors/solarized";
 @import "colors/writer_pro";
 @import "colors/random";
-// $green:           #859900;
 
-$dark0: $gb-light-dark0;
-$dark1: $gb-light-dark1;
-$dark2: $gb-light-dark2;
-$dark3: $gb-light-dark3;
-$dark4: $gb-light-dark4;
-$medium: $gb-light-medium;
-$light0: $gb-light-light0;
-$light1: $gb-light-light1;
-$light2: $gb-light-light2;
-$light3: $gb-light-light3;
-$light4: $gb-light-light4;
-// $magenta: $gb-light-red;
-// $red: $gb-light-red;
-// $green: $gb-light-green;
-// $yellow: $gb-light-yellow;
-// $blue: $gb-light-blue;
-// $orange: $gb-light-orange;
-// $violet: $gb-light-purple;
-// $cyan: $gb-light-aqua;
+$bg:    $basecamp-tan;
+$fg:    #3d3d3d;
+$caret: $caret-blue;
 
-$bg:      $basecamp-tan;
-$fg:      #3d3d3d;
 $dark0:   mix($fg, $bg, (1-(5/60*1))*100%);  // #444
 $dark1:   mix($fg, $bg, (1-(5/60*2))*100%);  // #555
 $dark2:   mix($fg, $bg, (1-(5/60*3))*100%);  // #666
@@ -43,14 +23,9 @@ $light2:  mix($fg, $bg, (1-(5/60*9))*100%);  // #ccc
 $light1:  mix($fg, $bg, (1-(5/60*10))*100%); // #ddd
 $light0:  mix($fg, $bg, (1-(5/60*11))*100%); // #eee
 
-
-$error:             $caret-magenta; // used for testing purposes
-$caret:             $caret-blue;
-// $gray-very-light:   $light1; // lighten($fg, 62%); // #dbdbdb;
-// $gray-light:        lighten($fg, 38%); // mix($fg, $bg, 47.5%); // "#9e9e9e"
-// $gray-dark:         $dark2; // lighten($fg, 14%); // mix($fg, $bg, 80.5%); // "#616161"
-$gutter:            hsla(0,0,0, 0.0275); //desaturate(darken($bg, 3), 3); // "#eeeeee"
-$gutter-text:       $medium;
+$error:       adjust-hue($caret, 130deg);
+$gutter:      hsla(0,0,0, 0.0275); //desaturate(darken($bg, 3), 3); // "#eeeeee"
+$selection:   transparentize($caret, .85);  // '#00aeff22';
 
 @import "components/colors_and_styles";
 
@@ -71,9 +46,10 @@ $gutter-text:       $medium;
 	stackGuide:  $light1;
 
 	/* Selection */
-	selection:         transparentize($caret, .85); // '#00aeff22';
-	selectionBorder:   transparentize($caret, .38); // '#00aeff55';
-	inactiveSelection: $gutter; // '#9e9e9e33';
+
+  selection:          $selection;
+  selectionBorder:    opacify($selection, .38);
+  inactiveSelection:  desaturate($selection, 100);
 
 	/* Find */
 	findHighlight:           transparentize(lighten($yellow, 38%), 0.24); // ~ '#ffc71977';
