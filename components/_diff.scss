@@ -1,0 +1,26 @@
+/**
+ * Syntax: Diff
+ */
+
+meta.diff {
+    &.header {
+        @include style(bold);
+        background: $gutter;
+        &.from-file {
+            // foreground: $red;
+        }
+        &.to-file {
+            // foreground: $green;
+        }
+    }
+    markup {
+        &.deleted {
+            foreground: $fg;
+            @include bg($red, 1);
+        }
+        &.inserted {
+            foreground: $fg;
+            @include bg($green, 1);
+        }
+    }
+}

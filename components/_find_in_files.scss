@@ -1,0 +1,11 @@
+/**
+ * Syntax: Find in Files
+ */
+
+entity.name.filename.find-in-files {
+    foreground: $blue;
+}
+
+constant.numeric.line-number.find-in-files '-' match {
+    foreground: $magenta;
+}

@@ -1,40 +1,11 @@
 /**
- * Colors  & Styles
- * Use for quick prototyping
+ * Prototyping selectors
  */
-
-
-@mixin fg($color) {
-	foreground: $color;
-}
-
-@mixin bg($color, $punctuate: 0) {
-	background: lighten(transparentize($color, 0.85), 9%);
-	@if $punctuate != 0 {
-		punctuation {
-			foreground: $color;
-		}
-	}
-}
-
-@mixin punctuation($color) {
-	foreground: transparentize($color, 0.38);
-	// foreground: transparentize(mix($color, $page-text, 62%), 0.38);
-}
-
-
-@mixin style($style) {
-	fontStyle: $style;
-
-	@if index($style, bold) {
-		@include fg($dark2);
-	}
-}
 
 bg.blue       {	@include bg($blue); }
 bg.cyan       {	@include bg($cyan); }
 bg.gray-dark  {	@include bg($dark2); }
-bg.gray-light {	@include bg($medium); }
+bg.gray-light {	@include bg($light2); }
 bg.gray       {	@include bg($medium); }
 bg.green      {	@include bg($green); }
 bg.magenta    {	@include bg($magenta); }
@@ -45,7 +16,7 @@ bg.yellow     {	@include bg($yellow); }
 blue          {	@include fg($blue); }
 cyan          {	@include fg($cyan); }
 gray-dark     {	@include fg($dark2); }
-gray-light    {	@include fg($medium); }
+gray-light    {	@include fg($light2); }
 gray          {	@include fg($medium); }
 green         {	@include fg($green); }
 magenta       {	@include fg($magenta); }

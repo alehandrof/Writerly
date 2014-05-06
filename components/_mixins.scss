@@ -1,0 +1,30 @@
+/**
+ * Mixins
+ */
+
+@mixin fg($color) {
+	foreground: $color;
+}
+
+@mixin bg($color, $punctuate: 0) {
+	background: lighten(transparentize($color, 0.85), 9%);
+	@if $punctuate != 0 {
+		punctuation {
+			foreground: $color;
+		}
+	}
+}
+
+@mixin punctuation($color) {
+	foreground: transparentize($color, 0.38);
+	// foreground: transparentize(mix($color, $page-text, 62%), 0.38);
+}
+
+
+@mixin style($style) {
+	fontStyle: $style;
+
+	@if index($style, bold) {
+		@include fg($dark2);
+	}
+}

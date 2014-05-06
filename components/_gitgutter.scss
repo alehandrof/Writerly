@@ -1,0 +1,25 @@
+/**
+ * Plugin: GitGutter
+ * Also helps out with: Syntax: Markdown (Typewriter) & Critic Markup
+ */
+
+markup {
+    &.changed {
+        foreground: $yellow;
+        // $violet (gitgutter)
+    }
+    &.deleted {
+        foreground: $red;
+        // $magenta (gitgutter)
+    }
+    &.ignored, &.untracked {
+        foreground: $dark2;
+    }
+    &.inserted {
+        // @include style(italic);
+        foreground: $green;
+    }
+    &.highlight {
+        foreground: $violet;
+    }
+}

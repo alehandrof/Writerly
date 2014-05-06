@@ -1,0 +1,28 @@
+/**
+ * Syntax: Markdown (Typewriter) & other custom stuff
+ */
+
+text.html.markdown punctuation {
+    // @include style(bold);
+    foreground: $medium;
+    @include style(none);
+}
+
+markup {
+    &.strikethrough {
+        @include bg($medium);
+    }
+}
+
+string.other.link {
+    &.inline {
+        foreground: $fg;
+    }
+    &.title {
+        foreground: $dark2;
+    }
+}
+
+constant.character.hard-line-break {
+    @include bg($violet);
+}

@@ -1,0 +1,133 @@
+/**
+ * Core Selectors
+ */
+
+comment {
+	foreground: $medium;
+}
+
+constant {
+	&.character,
+	&.language,
+	&.numeric,
+	&.other {
+		foreground: $violet;
+	}
+}
+
+entity {
+	&.name.tag {
+		foreground: $magenta;
+	}
+	&.name.class,
+	&.name.function,
+	&.other.attribute-name,
+	&.other.inherited-class {
+		foreground: $green;
+	}
+
+	&.name.class,
+	&.other.inherited-class {
+		@include style(italic);
+	}
+}
+
+invalid {
+	@include bg($red);
+
+	&.deprecated {
+		@include bg($magenta);
+	}
+}
+
+keyword {
+	foreground: $magenta;
+}
+
+markup {
+	&.separator,
+	&.strikethrough,
+	&.comment {
+		foreground: $medium;
+	}
+
+	&.raw,
+	&.quote {
+		foreground: $dark2;
+	}
+
+	&.underline.link {
+		foreground: $blue;
+		&.reference {
+			foreground: $violet;
+		}
+	}
+
+	&.italic,
+	&.quote {
+		@include style(italic);
+	}
+
+	&.heading,
+	&.bold,
+	&.quote markup.italic markup.bold,
+	&.quote markup.bold markup.italic {
+		@include style(bold);
+	}
+
+	&.bold markup.italic,
+	&.italic markup.bold,
+	&.quote markup.bold,
+	&.heading markup.italic {
+		@include style(bold italic);
+	}
+
+	&.quote markup.italic {
+		@include style(none);
+	}
+}
+
+storage {
+	foreground: $magenta;
+	&.type {
+		@include style(italic);
+		foreground: $blue;
+	}
+}
+
+string  {
+	foreground: $yellow;
+	punctuation {
+		@include punctuation($yellow);
+	}
+
+	&.addition {
+		foreground: $green;
+	}
+}
+
+support {
+	&.class,
+	&.constant,
+	&.function,
+	&.type {
+		foreground: $blue;
+	}
+
+	&.class,
+	&.type {
+		@include style(italic);
+	}
+}
+
+variable {
+	&.declaration, /* LESS */
+	&.other,
+	&.parameter {
+		foreground: $orange;
+	}
+
+	&.parameter {
+		@include style(italic);
+	}
+}

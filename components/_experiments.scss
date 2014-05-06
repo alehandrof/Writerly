@@ -1,0 +1,13 @@
+/**
+ * EXPERIMENTS
+ */
+
+/* Make punctuation more interesting */
+
+punctuation.definition.tag {
+	@include punctuation($magenta);
+}
+
+meta.property-value punctuation {
+	// @include punctuation($blue);
+}

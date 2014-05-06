@@ -1,0 +1,21 @@
+/**
+ * Plugin: Bracket Highlighter
+ */
+
+brackethighlighter.default,
+brackethighlighter.curly,
+brackethighlighter.round,
+brackethighlighter.square,
+brackethighlighter.angle,
+brackethighlighter.tag,
+brackethighlighter.quote {
+	foreground: $cyan;
+}
+
+brackethighlighter.unmatched {
+	foreground: $red;
+}
+
+// brackethighlighter.quote {
+// 	foreground: $dark2;
+// }
