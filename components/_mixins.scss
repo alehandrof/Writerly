@@ -24,7 +24,7 @@
 @mixin style($style) {
 	fontStyle: $style;
 
-	@if index($style, bold) {
+	/* @if index($style, bold) {
 		@include fg($dark2);
-	}
+	} */
 }
