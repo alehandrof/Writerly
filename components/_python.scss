@@ -1,0 +1,10 @@
+/**
+ * Syntax: Python
+ */
+
+string.quoted.double.block.python {
+	foreground: $comment;
+	punctuation {
+		@include punctuation($comment);
+	}
+}

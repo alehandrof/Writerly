@@ -32,13 +32,16 @@ $selection:   transparentize($caret, .85);  // '#00aeff22';
 @import "diff";
 @import "find_in_files";
 @import "markdown";
+@import "python";
 
 
 /* Plugins */
 
 @import "brackethighlighter";
 @import "gitgutter";
+@import "quickcal";
 @import "rawlineedit";
+@import "sublimegit";
 @import "sublimelinter";
 
 

@@ -1,0 +1,12 @@
+/**
+ * SublimeGit
+ */
+
+string.other.git-status.remote {
+	&.name  {
+		foreground: $visited-link;
+	}
+	&.url  {
+		foreground: $link;
+	}
+}

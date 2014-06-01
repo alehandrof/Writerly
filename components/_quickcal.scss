@@ -1,0 +1,14 @@
+/**
+ * Plugin: QuickCal
+ * https://github.com/facelessuser/QuickCal
+ */
+
+selected_day {
+	@include bg($info);
+	@include style(bold);
+}
+
+holiday {
+	@include bg($warning);
+	@include style(bold);
+}
