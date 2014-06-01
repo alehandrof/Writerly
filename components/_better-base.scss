@@ -20,11 +20,31 @@ $gutter:      hsla(0,0,0, 0.0275); //desaturate(darken($bg, 3), 3); // "#eeeeee"
 $selection:   transparentize($caret, .85);  // '#00aeff22';
 
 
+
+/*** Abstract Colors ***/
+
+// General colors
+$warning: $yellow;
+$danger:  $red;
+$info:    $cyan;
+$success: $green;
+
+// Misc
+$link: $blue;
+$visited-link: $violet;
+
+// Core Selectors
+$comment: $medium;
+$constant: $violet;
+$tag: $magenta;
+
 /* Base */
 
 @import "mixins";
 @import "settings";
 @import "core_selectors";
+// @import "../foo/base16-light";
+// @import "../foo/tomorrow-now";
 
 
 /* Syntaxes */

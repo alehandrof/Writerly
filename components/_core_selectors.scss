@@ -3,7 +3,7 @@
  */
 
 comment {
-	foreground: $medium;
+	foreground: $comment;
 }
 
 constant {
@@ -11,13 +11,13 @@ constant {
 	&.language,
 	&.numeric,
 	&.other {
-		foreground: $violet;
+		foreground: $constant;
 	}
 }
 
 entity {
 	&.name.tag {
-		foreground: $magenta;
+		foreground: $tag;
 	}
 	&.name.class,
 	&.name.function,
@@ -42,6 +42,10 @@ invalid {
 
 keyword {
 	foreground: $magenta;
+
+	&.operator {
+		foreground: $info;
+	}
 }
 
 markup {
@@ -49,6 +53,10 @@ markup {
 	&.strikethrough,
 	&.comment {
 		foreground: $medium;
+	}
+
+	&.raw {
+		background: $light0;
 	}
 
 	&.raw,
