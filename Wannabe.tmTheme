@@ -133,11 +133,29 @@
 		</dict>
 		<dict>
 			<key>scope</key>
+			<string>keyword.operator</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#2aa198</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
 			<string>markup.separator, markup.strikethrough, markup.comment</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
 				<string>#999999</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>markup.raw</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#e6e6e6</string>
 			</dict>
 		</dict>
 		<dict>
@@ -183,8 +201,6 @@
 			<dict>
 				<key>fontStyle</key>
 				<string>bold</string>
-				<key>foreground</key>
-				<string>#6b6b6b</string>
 			</dict>
 		</dict>
 		<dict>
@@ -194,8 +210,6 @@
 			<dict>
 				<key>fontStyle</key>
 				<string>bold italic</string>
-				<key>foreground</key>
-				<string>#6b6b6b</string>
 			</dict>
 		</dict>
 		<dict>
@@ -299,8 +313,6 @@
 				<string>#00000007</string>
 				<key>fontStyle</key>
 				<string>bold</string>
-				<key>foreground</key>
-				<string>#6b6b6b</string>
 			</dict>
 		</dict>
 		<dict>
@@ -410,6 +422,24 @@
 		</dict>
 		<dict>
 			<key>scope</key>
+			<string>string.quoted.double.block.python</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#999999</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>string.quoted.double.block.python punctuation</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#9999999E</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
 			<string>brackethighlighter.default, brackethighlighter.curly, brackethighlighter.round, brackethighlighter.square, brackethighlighter.angle, brackethighlighter.tag, brackethighlighter.quote</string>
 			<key>settings</key>
 			<dict>
@@ -473,11 +503,51 @@
 		</dict>
 		<dict>
 			<key>scope</key>
+			<string>selected_day</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#33C5BA26</string>
+				<key>fontStyle</key>
+				<string>bold</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>holiday</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#E3AC0026</string>
+				<key>fontStyle</key>
+				<string>bold</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
 			<string>glyph.carriage-return, glyph.new-line</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
 				<string>#2aa198</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>string.other.git-status.remote.name</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#6c71c4</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>string.other.git-status.remote.url</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#268bd2</string>
 			</dict>
 		</dict>
 		<dict>
@@ -718,8 +788,6 @@
 			<dict>
 				<key>fontStyle</key>
 				<string>bold</string>
-				<key>foreground</key>
-				<string>#6b6b6b</string>
 			</dict>
 		</dict>
 		<dict>
@@ -738,8 +806,6 @@
 			<dict>
 				<key>fontStyle</key>
 				<string>bold italic</string>
-				<key>foreground</key>
-				<string>#6b6b6b</string>
 			</dict>
 		</dict>
 		<dict>
