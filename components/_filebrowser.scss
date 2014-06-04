@@ -1,0 +1,86 @@
+/**
+ * FileBrowser
+ * https://sublime.wbond.net/packages/FileBrowser
+ */
+
+header.dired {
+	@name "Header";
+	foreground: $blue;
+}
+
+header.dired punctuation.definition.separator.dired {
+	@name "Header punctuations";
+	foreground: $light2;
+}
+
+punctuation.definition.directory.symbol.dired,
+punctuation.definition.file.symbol.dired,
+dired.item.parent_dir {
+	@name "File/Dir Symbols";
+	foreground: $light2;
+}
+
+dired.item string {
+	@name "File/Dir";
+	foreground: $fg;
+}
+
+string.name.directory.dired {
+	@name "Dir Name";
+	@include style(bold);
+}
+
+punctuation.definition.directory.slash.dired {
+	@name "Dir Slash";
+	foreground: $comment;
+}
+
+header.dired punctuation.definition.rename_mode {
+	@name "Header Rename Mode Title";
+	foreground: $orange;
+}
+
+dired.marked {
+	@name "Marked";
+	foreground: $bg;
+	background: $blue;
+}
+
+string.error.dired {
+	@name "Error";
+	foreground: $red;
+}
+
+item.modified.dired {
+	@name "VCS Modified";
+	background: $yellow;
+}
+
+item.untracked.dired {
+	@name "VCS Untracked";
+	background: $violet;
+}
+
+/*
+help.dired {
+	@name "Help";
+	background: #f5f7f8;
+	foreground: #687481;
+}
+
+punctuations.help.dired {
+	@name "Help punctuations";
+	foreground: #6f798766;
+}
+
+punctuations.shortcut.help.dired {
+	@name "Help shortcut punctuations";
+	foreground: #68748166;
+}
+
+key.shortcut.help.dired {
+	@name "Help shortcut";
+	@include style(bold);
+	foreground: #000000;
+}
+*/
