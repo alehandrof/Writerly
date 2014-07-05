@@ -55,8 +55,10 @@ markup {
 		foreground: $medium;
 	}
 
-	&.raw {
-		background: $light0;
+	&.raw.inline {
+		// background: $light0;
+		@include bg($green);
+		foreground: $green;
 	}
 
 	&.raw,
@@ -70,13 +72,20 @@ markup {
 			foreground: $violet;
 		}
 	}
+	string.other.link {
+		foreground: $blue;
+	}
 
 	&.italic,
 	&.quote {
 		@include style(italic);
 	}
 
-	&.heading,
+	&.heading {
+		@include style(bold);
+		@include bg($yellow);
+	}
+
 	&.bold,
 	&.quote markup.italic markup.bold,
 	&.quote markup.bold markup.italic {
