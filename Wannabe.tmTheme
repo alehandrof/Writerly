@@ -151,11 +151,13 @@
 		</dict>
 		<dict>
 			<key>scope</key>
-			<string>markup.raw</string>
+			<string>markup.raw.inline</string>
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#e6e6e6</string>
+				<string>#ADC70026</string>
+				<key>foreground</key>
+				<string>#859900</string>
 			</dict>
 		</dict>
 		<dict>
@@ -187,6 +189,15 @@
 		</dict>
 		<dict>
 			<key>scope</key>
+			<string>markup string.other.link</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#268bd2</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
 			<string>markup.italic, markup.quote</string>
 			<key>settings</key>
 			<dict>
@@ -196,7 +207,18 @@
 		</dict>
 		<dict>
 			<key>scope</key>
-			<string>markup.heading, markup.bold, markup.quote markup.italic markup.bold, markup.quote markup.bold markup.italic</string>
+			<string>markup.heading</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#E3AC0026</string>
+				<key>fontStyle</key>
+				<string>bold</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>markup.bold, markup.quote markup.italic markup.bold, markup.quote markup.bold markup.italic</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
@@ -357,6 +379,15 @@
 		</dict>
 		<dict>
 			<key>scope</key>
+			<string>entity.other.attribute-name.id</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#cb4b16</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
 			<string>entity.name.filename.find-in-files</string>
 			<key>settings</key>
 			<dict>
@@ -457,6 +488,129 @@
 			</dict>
 		</dict>
 		<dict>
+			<key>name</key>
+			<string>Header</string>
+			<key>scope</key>
+			<string>header.dired</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#268bd2</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Header punctuations</string>
+			<key>scope</key>
+			<string>header.dired punctuation.definition.separator.dired</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#c7c7c7</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>File/Dir Symbols</string>
+			<key>scope</key>
+			<string>punctuation.definition.directory.symbol.dired, punctuation.definition.file.symbol.dired, dired.item.parent_dir</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#c7c7c7</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>File/Dir</string>
+			<key>scope</key>
+			<string>dired.item string</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#3d3d3d</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Dir Name</string>
+			<key>scope</key>
+			<string>string.name.directory.dired</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>bold</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Dir Slash</string>
+			<key>scope</key>
+			<string>punctuation.definition.directory.slash.dired</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#999999</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Header Rename Mode Title</string>
+			<key>scope</key>
+			<string>header.dired punctuation.definition.rename_mode</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#cb4b16</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Marked</string>
+			<key>scope</key>
+			<string>dired.marked</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#268bd2</string>
+				<key>foreground</key>
+				<string>#f6f6f6</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Error</string>
+			<key>scope</key>
+			<string>string.error.dired</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#dc322f</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>VCS Modified</string>
+			<key>scope</key>
+			<string>item.modified.dired</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#b58900</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>VCS Untracked</string>
+			<key>scope</key>
+			<string>item.untracked.dired</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#6c71c4</string>
+			</dict>
+		</dict>
+		<dict>
 			<key>scope</key>
 			<string>markup.changed</string>
 			<key>settings</key>
@@ -548,6 +702,33 @@
 			<dict>
 				<key>foreground</key>
 				<string>#268bd2</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>constant.other.git-status.header, meta.git-status.file</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#3d3d3d</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>meta.git-status.unstaged_changes</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#b58900</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>meta.git-status.staged_changes</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#859900</string>
 			</dict>
 		</dict>
 		<dict>
