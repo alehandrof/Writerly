@@ -10,3 +10,16 @@ string.other.git-status.remote {
 		foreground: $link;
 	}
 }
+
+constant.other.git-status.header,
+meta.git-status.file {
+	foreground: $fg;
+}
+
+meta.git-status.unstaged_changes {
+	foreground: $warning;
+}
+
+meta.git-status.staged_changes {
+	foreground: $success;
+}
