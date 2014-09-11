@@ -83,7 +83,7 @@ markup {
 
 	&.heading {
 		@include style(bold);
-		@include bg($yellow);
+		@include bg($red);
 	}
 
 	&.bold,
