@@ -211,7 +211,7 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#E3AC0026</string>
+				<string>#E3595626</string>
 				<key>fontStyle</key>
 				<string>bold</string>
 			</dict>
@@ -449,6 +449,15 @@
 			<dict>
 				<key>background</key>
 				<string>#8D91D126</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>meta.separator.markdown</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#E3595626</string>
 			</dict>
 		</dict>
 		<dict>
