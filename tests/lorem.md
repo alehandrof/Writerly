@@ -4,9 +4,9 @@ __Sed quis dolor pharetra__, scelerisque magna eu, consectetur sem. Cras eget le
 
 Donec condimentum massa nec [elementum pellentesque][placerat]:
 
-- Pellentesque tincidunt
-- Diam eu vulputate venenatis
-- Ipsum felis interdum elit
+1. Pellentesque tincidunt
+2. Diam eu `vulputate` venenatis
+3. Ipsum felis interdum elit
 
 [placerat]: http://www.quefelis.com/venenatis/a/dictum
 
@@ -23,6 +23,7 @@ Sed auctor eu dui a ultricies. Proin ultrices, nunc et aliquam tempor, nulla sap
 2. Proin convallis nibh turpis, at pretium massa vehicula non.
 3. Vestibulum feugiat bibendum dui quis fringilla.
 4. Integer nec varius lacus.
+
 Vivamus posuere porttitor pretium. Maecenas velit ipsum, imperdiet ac tristique in, pellentesque non felis.
 
 Morbi posuere libero felis, nec sagittis mauris vehicula non. Morbi sed vestibulum diam. Nulla gravida lacus eget euismod imperdiet. Suspendisse feugiat risus ut faucibus volutpat. Sed eleifend nisi nec dui tristique pretium. Donec tincidunt nisl sit amet elit rhoncus, a lobortis nunc fringilla. Aliquam pulvinar accumsan ante, sed faucibus eros. Morbi eleifend tempor dictum. Aliquam fringilla quam velit, ut volutpat est egestas eget. Pellentesque accumsan velit aliquet massa fringilla fermentum. Nunc fermentum at dui quis tincidunt. Etiam eu faucibus diam, nec venenatis mi. Aenean tempus, nisl vel convallis fringilla, dui nulla auctor nisi, egestas posuere erat nisi at velit. Maecenas ac odio purus. Nunc in dui velit. Pellentesque posuere nisl eget rutrum vehicula.
