@@ -37,7 +37,7 @@ punctuation.definition.directory.slash.dired {
 
 header.dired punctuation.definition.rename_mode {
 	@name "Header Rename Mode Title";
-	foreground: $orange;
+	foreground: $variable;
 }
 
 dired.marked {
@@ -48,17 +48,17 @@ dired.marked {
 
 string.error.dired {
 	@name "Error";
-	foreground: $red;
+	foreground: $danger;
 }
 
 item.modified.dired {
 	@name "VCS Modified";
-	background: $yellow;
+	background: $warning;
 }
 
 item.untracked.dired {
 	@name "VCS Untracked";
-	background: $violet;
+	background: $link-alt;
 }
 
 /*

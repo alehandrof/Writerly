@@ -5,11 +5,11 @@
 
 markup {
     &.changed {
-        foreground: $yellow;
+        foreground: $warning;
         // $violet (gitgutter)
     }
     &.deleted {
-        foreground: $red;
+        foreground: $danger;
         // $magenta (gitgutter)
     }
     &.ignored, &.untracked {
@@ -17,9 +17,9 @@ markup {
     }
     &.inserted {
         // @include style(italic);
-        foreground: $green;
+        foreground: $success;
     }
     &.highlight {
-        foreground: $violet;
+        foreground: $link-alt;
     }
 }

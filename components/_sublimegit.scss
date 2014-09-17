@@ -4,7 +4,7 @@
 
 string.other.git-status.remote {
 	&.name  {
-		foreground: $visited-link;
+		foreground: $link-alt;
 	}
 	&.url  {
 		foreground: $link;

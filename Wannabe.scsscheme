@@ -61,13 +61,18 @@ $info:    $cyan;
 $success: $green;
 
 $link: $blue;
-$visited-link: $violet;
+$link-alt: $violet;
+
+$ui: $cyan; // a color related to the caret and the selection
 
 // Core Selectors
 $comment: $medium;
 $constant: $violet;
 $tag: $magenta;
 $keyword: $magenta;
-
+$string: $yellow;
+$tag: $magenta;
+$variable: $orange;
+$entity: $green;
 
 @import "components/better-base";

@@ -9,11 +9,11 @@ brackethighlighter.square,
 brackethighlighter.angle,
 brackethighlighter.tag,
 brackethighlighter.quote {
-	foreground: $cyan;
+	foreground: $ui;
 }
 
 brackethighlighter.unmatched {
-	foreground: $red;
+	foreground: $danger;
 }
 
 // brackethighlighter.quote {

@@ -5,7 +5,7 @@
 /* Make punctuation more interesting */
 
 punctuation.definition.tag {
-	@include punctuation($magenta);
+	@include punctuation($tag);
 }
 
 meta.property-value punctuation {

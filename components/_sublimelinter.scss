@@ -4,12 +4,12 @@
 
 sublimelinter.mark.warning {
 	@name "SublimeLinter Warning";
-	foreground: $yellow; // was: #DDB700;
+	foreground: $warning; // was: #DDB700;
 }
 
 sublimelinter.mark.error {
 	@name "SublimeLinter Error";
-	foreground: $red; // was: #D02000
+	foreground: $danger; // was: #D02000
 }
 
 sublimelinter.gutter-mark {

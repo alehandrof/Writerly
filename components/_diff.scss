@@ -7,20 +7,20 @@ meta.diff {
         @include style(bold);
         background: $gutter;
         &.from-file {
-            // foreground: $red;
+            // foreground: $danger;
         }
         &.to-file {
-            // foreground: $green;
+            // foreground: $success;
         }
     }
     markup {
         &.deleted {
             foreground: $fg;
-            @include bg($red, 1);
+            @include bg($danger, 1);
         }
         &.inserted {
             foreground: $fg;
-            @include bg($green, 1);
+            @include bg($success, 1);
         }
     }
 }

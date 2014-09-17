@@ -24,9 +24,9 @@ string.other.link {
 }
 
 constant.character.hard-line-break {
-    @include bg($violet);
+    @include bg($ui);
 }
 
 meta.separator.markdown {
-    @include bg($red)
+    @include bg($danger)
 }

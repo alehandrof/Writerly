@@ -22,8 +22,8 @@
 	inactiveSelection:  desaturate($selection, 100);
 
 	/* Find */
-	findHighlight:           transparentize(lighten($yellow, 38%), 0.24); // ~ '#ffc71977';
-	findHighlightForeground: darken($yellow, 15%); // ~ #684f00;
+	findHighlight:           transparentize(lighten($warning, 38%), 0.24); // ~ '#ffc71977';
+	findHighlightForeground: darken($warning, 15%); // ~ #684f00;
 
 	/* Brackets & Tags */
 	// See also: https://www.sublimetext.com/forum/viewtopic.php?f=2&t=3007#p14196
