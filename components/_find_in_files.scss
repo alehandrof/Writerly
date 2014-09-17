@@ -3,9 +3,9 @@
  */
 
 entity.name.filename.find-in-files {
-    foreground: $blue;
+    foreground: $link;
 }
 
 constant.numeric.line-number.find-in-files '-' match {
-    foreground: $magenta;
+    foreground: $comment;
 }

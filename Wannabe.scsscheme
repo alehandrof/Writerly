@@ -57,21 +57,19 @@ $selection:   transparentize($caret, .85);  // '#00aeff22';
 
 $warning: $yellow;
 $danger:  $red;
-$info:    $cyan;
+$info:    $cyan; // a color related to the caret and the selection
 $success: $green;
 
 $link: $blue;
 $link-alt: $violet;
-
-$ui: $cyan; // a color related to the caret and the selection
 
 // Core Selectors
 $comment: $medium;
 $constant: $violet;
 $tag: $magenta;
 $keyword: $magenta;
+$storage: $magenta;
 $string: $yellow;
-$tag: $magenta;
 $variable: $orange;
 $entity: $green;
 

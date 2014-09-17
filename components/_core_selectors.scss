@@ -5,7 +5,7 @@
 comment {
 	foreground: $comment;
 	keyword {
-		foreground: mix($comment, $magenta, 75%);
+		foreground: mix($comment, $keyword, 75%);
 	}
 }
 
@@ -44,7 +44,7 @@ invalid {
 }
 
 keyword {
-	foreground: $magenta;
+	foreground: $keyword;
 
 	&.operator {
 		foreground: $info;
@@ -108,7 +108,7 @@ markup {
 }
 
 storage {
-	foreground: $magenta;
+	foreground: $storage;
 	&.type {
 		@include style(italic);
 		foreground: $blue;
