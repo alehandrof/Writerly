@@ -5,7 +5,7 @@
 
 header.dired {
 	@name "Header";
-	foreground: $blue;
+	foreground: $link;
 }
 
 header.dired punctuation.definition.separator.dired {
@@ -43,7 +43,7 @@ header.dired punctuation.definition.rename_mode {
 dired.marked {
 	@name "Marked";
 	foreground: $bg;
-	background: $blue;
+	background: $link;
 }
 
 string.error.dired {

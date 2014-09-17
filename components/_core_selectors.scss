@@ -111,7 +111,7 @@ storage {
 	foreground: $storage;
 	&.type {
 		@include style(italic);
-		foreground: $blue;
+		foreground: $support;
 	}
 }
 
@@ -131,13 +131,14 @@ support {
 	&.constant,
 	&.function,
 	&.type {
-		foreground: $blue;
-	}
-
-	&.class,
-	&.type {
+		// foreground: $storage;
 		@include style(italic);
 	}
+
+	// &.class,
+	// &.type {
+		// @include style(italic);
+	// }
 }
 
 variable {

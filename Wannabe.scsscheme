@@ -72,5 +72,6 @@ $storage: $magenta;
 $string: $yellow;
 $variable: $orange;
 $entity: $green;
+$support: $blue;
 
 @import "components/better-base";
