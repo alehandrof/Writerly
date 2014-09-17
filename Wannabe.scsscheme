@@ -1,13 +1,73 @@
 @name "Writerly - Wannabe";
 @author "Alex Armstrong (@alehandrof)";
 
-@import "colors/solarized";
-@import "colors/writer_pro";
-@import "colors/random";
+@import "colors/material-design";
+// @import "colors/solarized";
+// @import "colors/writer_pro";
+// @import "colors/random";
 // $green:           #859900;
 
-$bg:    $amazon-paperwhite;
-$fg:    #3d3d3d;
-$caret: $caret-blue;
+// $bg:    $amazon-paperwhite;
+// $fg:    #3d3d3d;
+// $caret: $caret-blue;
+
+
+/* !Colors */
+
+// $dark0:   mix($fg, $bg, (1-(5/60*1))*100%);  // #444
+// $dark1:   mix($fg, $bg, (1-(5/60*2))*100%);  // #555
+// $dark2:   mix($fg, $bg, (1-(5/60*3))*100%);  // #666
+// $dark3:   mix($fg, $bg, (1-(5/60*4))*100%);  // #777
+// $dark4:   mix($fg, $bg, (1-(5/60*5))*100%);  // #888
+// $medium:  mix($fg, $bg, (1-(5/60*6))*100%);  // #999
+// $light4:  mix($fg, $bg, (1-(5/60*7))*100%);  // #aaa
+// $light3:  mix($fg, $bg, (1-(5/60*8))*100%);  // #bbb
+// $light2:  mix($fg, $bg, (1-(5/60*9))*100%);  // #ccc
+// $light1:  mix($fg, $bg, (1-(5/60*10))*100%); // #ddd
+// $light0:  mix($fg, $bg, (1-(5/60*11))*100%); // #eee
+
+$yellow:  $color-lime-900; // base0a
+$orange:  $color-deep-orange-900; //base09
+$red:     $color-red-700; // base08
+$magenta: $color-pink-700; // base0f (wildcard)
+$violet:  $color-deep-purple-500; // base0f
+$blue:    $color-light-blue-700; // base0d
+$cyan:    $color-teal-500; //base0c
+$green:   $color-light-green-800; //base 0b
+
+
+$dark2:   $color-grey-700;
+$medium:  $color-grey-500;
+$light2:  $color-grey-400;
+$light1:  $color-grey-300;
+
+/*** Abstract Colors ***/
+
+// General colors
+
+$fg:    $color-grey-900;
+$bg:    $color-grey-100;
+$caret: $color-light-blue-400;
+
+$error:       $color-pink; // adjust-hue($caret, 130deg);
+$gutter:      $color-grey-200; //desaturate(darken($bg, 3), 3); // "#eeeeee"
+$selection:   transparentize($caret, .85);  // '#00aeff22';
+
+// Map to values
+
+$warning: $yellow;
+$danger:  $red;
+$info:    $cyan;
+$success: $green;
+
+$link: $blue;
+$visited-link: $violet;
+
+// Core Selectors
+$comment: $medium;
+$constant: $violet;
+$tag: $magenta;
+$keyword: $magenta;
+
 
 @import "components/better-base";

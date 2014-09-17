@@ -4,6 +4,9 @@
 
 comment {
 	foreground: $comment;
+	keyword {
+		foreground: mix($comment, $magenta, 75%);
+	}
 }
 
 constant {
