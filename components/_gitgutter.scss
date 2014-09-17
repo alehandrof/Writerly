@@ -6,17 +6,14 @@
 markup {
     &.changed {
         foreground: $warning;
-        // $violet (gitgutter)
     }
     &.deleted {
         foreground: $danger;
-        // $magenta (gitgutter)
     }
     &.ignored, &.untracked {
         foreground: $dark2;
     }
     &.inserted {
-        // @include style(italic);
         foreground: $success;
     }
     &.highlight {
