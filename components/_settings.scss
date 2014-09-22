@@ -8,7 +8,7 @@
 	foreground:       $fg;
 	gutter:           $gutter;
 	gutterForeground: $medium;
-	lineHighlight:    $gutter;
+	lineHighlight:    transparentize($fg, lightness($gutter)/lightness($bg)); // approx. same as $gutter
 
 	/* Guides */
 	guide:       $light1;
