@@ -1,0 +1,81 @@
+/**
+ * Plugin: PlainTasks
+ */
+
+
+// Bullets
+text.todo punctuation.definition.bullet {
+	@include style(bold);
+
+	&.completed { foreground: $success; }
+	&.pending   { foreground: $info; }
+	&.cancelled { foreground: $warning; }
+}
+
+
+// Notes
+notes.todo {
+	@include style(italic);
+	foreground: $dark2;
+}
+
+// Other markup
+meta.item.todo.cancelled { foreground: $comment; }
+meta.punctuation.archive.todo { foreground: $comment; }
+meta.punctuation.separator.todo { foreground: $comment; }
+todo.italic { @include style(italic); }
+todo.bold { @include style(bold); }
+
+
+
+text.todo {
+	meta { }
+
+	// Headings
+	keyword {
+		@include style(bold);
+		foreground: $info;
+	}
+}
+
+
+
+// Tags
+meta.tag.todo {
+	@include style(bold);
+	foreground: $info;
+
+	&.completed  { foreground: $success; }
+	&.cancelled  { foreground: $warning; }
+}
+
+string.other.tag.todo.today {
+	@include style(bold);
+	@include bg($danger);
+	foreground: $danger;
+}
+
+/*
+
+punctuation.definition.italic
+punctuation.definition.bold
+punctuation.section.embedded
+string
+constant.numeric
+constant.language
+constant.character, constant.other
+variable.language, variable.other
+constant.character.entity
+storage
+entity.name.type.class, support.class
+entity.other.inherited-class
+entity.name.function
+variable.parameter
+entity.name.tag, entity.other.attribute-name.class.css, entity.other.attribute-name.id.css
+entity.other.attribute-name
+support.function, support.constant.property-value.css
+support.constant
+support.type, support.class
+support.other.variable
+invalid
+*/
