@@ -2,29 +2,6 @@
 @author "Alex Armstrong (@alehandrof)";
 
 @import "colors/material-design";
-// @import "colors/solarized";
-// @import "colors/writer_pro";
-// @import "colors/random";
-// $green:           #859900;
-
-// $bg:    $amazon-paperwhite;
-// $fg:    #3d3d3d;
-// $caret: $caret-blue;
-
-
-/* !Colors */
-
-// $dark0:   mix($fg, $bg, (1-(5/60*1))*100%);  // #444
-// $dark1:   mix($fg, $bg, (1-(5/60*2))*100%);  // #555
-// $dark2:   mix($fg, $bg, (1-(5/60*3))*100%);  // #666
-// $dark3:   mix($fg, $bg, (1-(5/60*4))*100%);  // #777
-// $dark4:   mix($fg, $bg, (1-(5/60*5))*100%);  // #888
-// $medium:  mix($fg, $bg, (1-(5/60*6))*100%);  // #999
-// $light4:  mix($fg, $bg, (1-(5/60*7))*100%);  // #aaa
-// $light3:  mix($fg, $bg, (1-(5/60*8))*100%);  // #bbb
-// $light2:  mix($fg, $bg, (1-(5/60*9))*100%);  // #ccc
-// $light1:  mix($fg, $bg, (1-(5/60*10))*100%); // #ddd
-// $light0:  mix($fg, $bg, (1-(5/60*11))*100%); // #eee
 
 $yellow:  $color-lime-900; // base0a
 $orange:  $color-deep-orange-900; //base09
@@ -49,9 +26,9 @@ $fg:    $color-grey-900;
 $bg:    $color-grey-100;
 $caret: $color-light-blue-400;
 
-$error:       $color-pink; // adjust-hue($caret, 130deg);
-$gutter:      $color-grey-200; //desaturate(darken($bg, 3), 3); // "#eeeeee"
-$selection:   transparentize($caret, .85);  // '#00aeff22';
+$error:       $color-pink;
+$gutter:      $color-grey-200;
+$selection:   transparentize($caret, .85);
 
 // Map to values
 
