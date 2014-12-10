@@ -16,12 +16,14 @@
 	stackGuide:  $light1;
 
 	/* Selection */
-
 	selection:          $selection;
 	selectionBorder:    opacify($selection, .38);
 	inactiveSelection:  desaturate($selection, 100);
 
-	/* Find */
+	/* Highlight & Find */
+	// See also: http://www.sublimetext.com/forum/viewtopic.php?f=2&t=17042#p64031
+	highlight:               $cyan;
+	highlightForeground:     danger;
 	findHighlight:           transparentize(lighten($warning, 38%), 0.24); // ~ '#ffc71977';
 	findHighlightForeground: darken($warning, 15%); // ~ #684f00;
 
