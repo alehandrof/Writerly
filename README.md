@@ -2,7 +2,7 @@
 
 ## Sublime Text Color Schemes for Writers
 
-This repository is under heavy development; there is no stable `master` branch currently.
+This repository is under heavy development.
 
 ### Wannabe
 
