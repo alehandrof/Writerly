@@ -14,19 +14,17 @@ markup {
     }
 }
 
-string.other.link {
-    &.inline {
-        foreground: $fg;
-    }
-    &.title {
-        foreground: $dark2;
-    }
-}
-
 constant.character.hard-line-break {
     @include bg($info);
 }
 
 meta.separator.markdown {
-    @include bg($danger)
+    // @include bg($danger)
+}
+
+// Links
+string.other.link,
+meta.link.inet markup.underline.link,
+meta.link.reference markup.underline.link {
+    foreground: $link;
 }

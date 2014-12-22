@@ -59,9 +59,10 @@ markup {
 	}
 
 	&.raw.inline {
-		// background: $light0;
-		@include bg($entity);
-		foreground: $entity;
+		foreground: $keyword;
+		punctuation {
+			@include punctuation($keyword);
+		}
 	}
 
 	&.raw,
@@ -70,13 +71,10 @@ markup {
 	}
 
 	&.underline.link {
-		foreground: $link;
+		foreground: $medium;
 		&.reference {
 			foreground: $link-alt;
 		}
-	}
-	string.other.link {
-		foreground: $link;
 	}
 
 	&.italic,
@@ -86,7 +84,8 @@ markup {
 
 	&.heading {
 		@include style(bold);
-		@include bg($danger);
+		// @include bg($danger);
+		background: $light1;
 	}
 
 	&.bold,
