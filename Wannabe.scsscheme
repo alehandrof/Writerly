@@ -1,4 +1,4 @@
-@name "Writerly - Wannabe";
+@name   "Writerly - Wannabe";
 @author "Alex Armstrong (@alehandrof)";
 
 @import "colors/material-design";
@@ -13,10 +13,12 @@ $cyan:    $color-teal-500; //base0c
 $green:   $color-light-green-800; //base 0b
 
 
-$dark2:   $color-grey-700;
-$medium:  $color-grey-500;
-$light2:  $color-grey-400;
-$light1:  $color-grey-300;
+$black:  $color-grey-1000;
+$dark2:  $color-grey-700;
+$medium: $color-grey-500;
+$light2: $color-grey-400;
+$light1: $color-grey-300;
+$white:  $color-grey-0;
 
 /*** Abstract Colors ***/
 
@@ -37,18 +39,18 @@ $danger:  $red;
 $info:    $cyan; // a color related to the caret and the selection
 $success: $green;
 
-$link: $blue;
+$link:     $blue;
 $link-alt: $violet;
 
 // Core Selectors
-$comment: $medium;
+$comment:  $medium;
 $constant: $violet;
-$tag: $magenta;
-$keyword: $magenta;
-$storage: $magenta;
-$string: $yellow;
+$tag:      $magenta;
+$keyword:  $magenta;
+$storage:  $magenta;
+$string:   $yellow;
 $variable: $orange;
-$entity: $green;
-$support: $blue;
+$entity:   $green;
+$support:  $blue;
 
 @import "components/better-base";
