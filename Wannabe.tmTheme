@@ -167,10 +167,17 @@
 			<string>markup.raw.inline</string>
 			<key>settings</key>
 			<dict>
-				<key>background</key>
-				<string>#6AAD3B26</string>
 				<key>foreground</key>
-				<string>#558b2f</string>
+				<string>#c2185b</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>markup.raw.inline punctuation</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#C2185B9E</string>
 			</dict>
 		</dict>
 		<dict>
@@ -188,7 +195,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#0288d1</string>
+				<string>#9e9e9e</string>
 			</dict>
 		</dict>
 		<dict>
@@ -198,15 +205,6 @@
 			<dict>
 				<key>foreground</key>
 				<string>#673ab7</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>scope</key>
-			<string>markup string.other.link</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#0288d1</string>
 			</dict>
 		</dict>
 		<dict>
@@ -224,7 +222,7 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#E92C2B26</string>
+				<string>#e0e0e0</string>
 				<key>fontStyle</key>
 				<string>bold</string>
 			</dict>
@@ -421,24 +419,6 @@
 		</dict>
 		<dict>
 			<key>scope</key>
-			<string>string.other.link.inline</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#212121</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>scope</key>
-			<string>string.other.link.title</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#616161</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>scope</key>
 			<string>constant.character.hard-line-break</string>
 			<key>settings</key>
 			<dict>
@@ -448,11 +428,11 @@
 		</dict>
 		<dict>
 			<key>scope</key>
-			<string>meta.separator.markdown</string>
+			<string>string.other.link, meta.link.inet markup.underline.link, meta.link.reference markup.underline.link</string>
 			<key>settings</key>
 			<dict>
-				<key>background</key>
-				<string>#E92C2B26</string>
+				<key>foreground</key>
+				<string>#0288d1</string>
 			</dict>
 		</dict>
 		<dict>
