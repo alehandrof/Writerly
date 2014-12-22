@@ -16,11 +16,12 @@ Suggestions and PRs to improve the scheme in these capacities are very welcome. 
 
 `Wannabe` was constructed using @[FictheFolle](https://github.com/FichteFoll)'s wonderful [CSScheme](https://github.com/FichteFoll/CSScheme/). It is based on an earlier theme called simply `Writerly - Light` (earlier versions were called `Typewriter` for various reasons, so this name pops up here and there).
 
-Inspirations (by which I mean blatant theft of code/colors/etc.) for these themes includes:
+Inspiration / plagiarized colors & code from:
 
 - Monokai (the structure more than the colors)
 - [Solarized](http://ethanschoonover.com/solarized)
 - [Brackets](http://brackets.io/)
-- [iA Writer](www.iawriter.com)
+- [iA Writer](http://www.iawriter.com) & [Pro](http://writer.pro/)
+- [Material Design](http://www.google.com/design/spec/style/color.html#color-color-palette)
 
 If you play along, let me know what you think.
