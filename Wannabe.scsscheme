@@ -23,11 +23,11 @@ $light1:  $color-grey-300;
 // General colors
 
 $fg:    $color-grey-900;
-$bg:    $color-grey-100;
+$bg:    $color-grey-200;
 $caret: $color-light-blue-400;
 
 $error:       $color-pink;
-$gutter:      $color-grey-200;
+$gutter:      $color-grey-300;
 $selection:   transparentize($caret, .85);
 
 // Map to values
