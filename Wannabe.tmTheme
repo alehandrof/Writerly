@@ -34,9 +34,9 @@
 				<key>guide</key>
 				<string>#e0e0e0</string>
 				<key>gutter</key>
-				<string>#e0e0e0</string>
+				<string>#eeeeee</string>
 				<key>gutterForeground</key>
-				<string>#9e9e9e</string>
+				<string>#bdbdbd</string>
 				<key>highlight</key>
 				<string>#009688</string>
 				<key>highlightForeground</key>
@@ -46,7 +46,7 @@
 				<key>invisibles</key>
 				<string>#21212141</string>
 				<key>lineHighlight</key>
-				<string>#2121210F</string>
+				<string>#D4D4D480</string>
 				<key>selection</key>
 				<string>#29B6F626</string>
 				<key>selectionBorder</key>

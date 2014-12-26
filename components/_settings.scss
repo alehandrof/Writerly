@@ -6,9 +6,10 @@
 	caret:            $caret;
 	background:       $bg;
 	foreground:       $fg;
-	gutter:           $gutter;
-	gutterForeground: $medium;
-	lineHighlight:    transparentize($fg, lightness($gutter)/lightness($bg)); // approx. same as $gutter
+	gutter:           $bg; //$gutter;
+	gutterForeground: $light2; // $medium;
+	lineHighlight:    transparentize(darken($bg, 10), 0.5);
+	// lineHighlight:    transparentize($fg, lightness($gutter)/lightness($bg)); // approx. same as $gutter
 
 	/* Guides */
 	guide:       $light1;
