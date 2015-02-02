@@ -14,7 +14,7 @@ Suggestions and PRs to improve the scheme in these capacities are very welcome. 
 
 ### History & Credits
 
-`Wannabe` was constructed using @[FictheFolle](https://github.com/FichteFoll)'s wonderful [CSScheme](https://github.com/FichteFoll/CSScheme/). It is based on an earlier theme called simply `Writerly - Light` (earlier versions were called `Typewriter` for various reasons, so this name pops up here and there).
+`Wannabe` was constructed using @[FichteFoll](https://github.com/FichteFoll)'s wonderful [CSScheme](https://github.com/FichteFoll/CSScheme/). It is based on an earlier theme called simply `Writerly - Light` (earlier versions were called `Typewriter` for various reasons, so this name pops up here and there).
 
 Inspiration / plagiarized colors & code from:
 
