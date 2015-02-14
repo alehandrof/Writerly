@@ -14,27 +14,27 @@
 				<key>activeGuide</key>
 				<string>#9e9e9e</string>
 				<key>background</key>
-				<string>#eeeeee</string>
+				<string>#f6f2e7</string>
 				<key>bracketContentsForeground</key>
-				<string>#29b6f6</string>
+				<string>#5dbdcd</string>
 				<key>bracketContentsOptions</key>
 				<string>underline</string>
 				<key>bracketsForeground</key>
-				<string>#29b6f6</string>
+				<string>#5dbdcd</string>
 				<key>bracketsOptions</key>
 				<string>underline</string>
 				<key>caret</key>
-				<string>#29b6f6</string>
+				<string>#5dbdcd</string>
 				<key>findHighlight</key>
 				<string>#E6DB74C2</string>
 				<key>findHighlightForeground</key>
 				<string>#413b0c</string>
 				<key>foreground</key>
-				<string>#212121</string>
+				<string>#616161</string>
 				<key>guide</key>
 				<string>#e0e0e0</string>
 				<key>gutter</key>
-				<string>#eeeeee</string>
+				<string>#f6f2e7</string>
 				<key>gutterForeground</key>
 				<string>#bdbdbd</string>
 				<key>highlight</key>
@@ -42,15 +42,15 @@
 				<key>highlightForeground</key>
 				<string>danger</string>
 				<key>inactiveSelection</key>
-				<string>#90909026</string>
+				<string>#95959526</string>
 				<key>invisibles</key>
-				<string>#21212141</string>
+				<string>#61616141</string>
 				<key>lineHighlight</key>
-				<string>#D4D4D480</string>
+				<string>#EFE8D480</string>
 				<key>selection</key>
-				<string>#29B6F626</string>
+				<string>#5DBDCD26</string>
 				<key>selectionBorder</key>
-				<string>#29B6F687</string>
+				<string>#5DBDCD87</string>
 				<key>shadow</key>
 				<string>#9e9e9e</string>
 				<key>shadowWidth</key>
@@ -58,7 +58,7 @@
 				<key>stackGuide</key>
 				<string>#e0e0e0</string>
 				<key>tagsForeground</key>
-				<string>#29b6f6</string>
+				<string>#5dbdcd</string>
 				<key>tagsOptions</key>
 				<string>underline</string>
 			</dict>
@@ -347,7 +347,7 @@
 				<key>background</key>
 				<string>#E92C2B26</string>
 				<key>foreground</key>
-				<string>#212121</string>
+				<string>#616161</string>
 			</dict>
 		</dict>
 		<dict>
@@ -367,7 +367,7 @@
 				<key>background</key>
 				<string>#6AAD3B26</string>
 				<key>foreground</key>
-				<string>#212121</string>
+				<string>#616161</string>
 			</dict>
 		</dict>
 		<dict>
@@ -395,6 +395,15 @@
 			<dict>
 				<key>foreground</key>
 				<string>#0288d1</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>constant.numeric.line-number.find-in-files - match</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#9e9e9e</string>
 			</dict>
 		</dict>
 		<dict>
@@ -512,7 +521,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#212121</string>
+				<string>#616161</string>
 			</dict>
 		</dict>
 		<dict>
@@ -558,7 +567,7 @@
 				<key>background</key>
 				<string>#0288d1</string>
 				<key>foreground</key>
-				<string>#eeeeee</string>
+				<string>#f6f2e7</string>
 			</dict>
 		</dict>
 		<dict>
@@ -650,33 +659,6 @@
 		</dict>
 		<dict>
 			<key>scope</key>
-			<string>text.todo punctuation.definition.bullet.completed</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#558b2f</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>scope</key>
-			<string>text.todo punctuation.definition.bullet.pending</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#009688</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>scope</key>
-			<string>text.todo punctuation.definition.bullet.cancelled</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#827717</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>scope</key>
 			<string>notes.todo</string>
 			<key>settings</key>
 			<dict>
@@ -755,24 +737,6 @@
 		</dict>
 		<dict>
 			<key>scope</key>
-			<string>meta.tag.todo.completed</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#558b2f</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>scope</key>
-			<string>meta.tag.todo.cancelled</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#827717</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>scope</key>
 			<string>string.other.tag.todo.today</string>
 			<key>settings</key>
 			<dict>
@@ -782,6 +746,24 @@
 				<string>bold</string>
 				<key>foreground</key>
 				<string>#d01716</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>meta.item.todo.completed, meta.item.todo.completed meta.tag</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#9e9e9e</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>notes.todo</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#9e9e9e</string>
 			</dict>
 		</dict>
 		<dict>
@@ -839,7 +821,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#212121</string>
+				<string>#616161</string>
 			</dict>
 		</dict>
 		<dict>
