@@ -2,6 +2,8 @@
 @author "Alex Armstrong (@alehandrof)";
 
 @import "colors/material-design";
+@import "colors/desk";
+@import "colors/writer_pro";
 
 $yellow:  $color-lime-900; // base0a
 $orange:  $color-deep-orange-900; //base09
@@ -24,9 +26,9 @@ $white:  $color-grey-0;
 
 // General colors
 
-$fg:    $color-grey-900;
-$bg:    $color-grey-200;
-$caret: $color-light-blue-400;
+$fg:    $desk-fg; // $color-grey-900;
+$bg:    $desk-bg; // $color-grey-200;
+$caret: $desk-primary; // $color-light-blue-400;
 
 $error:       $color-pink;
 $gutter:      $color-grey-300;
