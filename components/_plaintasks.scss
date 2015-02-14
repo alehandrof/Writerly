@@ -7,9 +7,9 @@
 text.todo punctuation.definition.bullet {
 	@include style(bold);
 
-	&.completed { foreground: $success; }
-	&.pending   { foreground: $info; }
-	&.cancelled { foreground: $warning; }
+	// &.completed { foreground: $success; }
+	// &.pending   { foreground: $info; }
+	// &.cancelled { foreground: $warning; }
 }
 
 
@@ -45,8 +45,8 @@ meta.tag.todo {
 	@include style(bold);
 	foreground: $info;
 
-	&.completed  { foreground: $success; }
-	&.cancelled  { foreground: $warning; }
+	// &.completed  { foreground: $success; }
+	// &.cancelled  { foreground: $warning; }
 }
 
 string.other.tag.todo.today {
@@ -54,6 +54,18 @@ string.other.tag.todo.today {
 	@include bg($danger);
 	foreground: $danger;
 }
+
+meta.item.todo.completed {
+	&,
+	meta.tag {
+		foreground: $comment;
+	}
+}
+
+notes.todo {
+	foreground: $comment;
+}
+
 
 /*
 
