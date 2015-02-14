@@ -1,34 +1,34 @@
 {
-    "bracket_styles": {
-        "default": {
-            "color": "brackethighlighter.default",
-        },
-        "unmatched": {
-            "color": "brackethighlighter.unmatched",
-        },
-        "curly": {
-            "color": "brackethighlighter.curly",
-        },
-        "round": {
-            "color": "brackethighlighter.round",
-        },
-        "square": {
-            "color": "brackethighlighter.square",
-        },
-        "angle": {
-            "color": "brackethighlighter.angle",
-        },
-        "tag": {
-            "color": "brackethighlighter.tag",
-        },
-        "single_quote": {
-            "color": "brackethighlighter.quote",
-        },
-        "double_quote": {
-            "color": "brackethighlighter.quote",
-        },
-        "regex": {
-            "color": "brackethighlighter.quote",
-        }
-    }
+	"bracket_styles": {
+		"default": {
+			"color": "brackethighlighter.default",
+		},
+		"unmatched": {
+			"color": "brackethighlighter.unmatched",
+		},
+		"curly": {
+			"color": "brackethighlighter.curly",
+		},
+		"round": {
+			"color": "brackethighlighter.round",
+		},
+		"square": {
+			"color": "brackethighlighter.square",
+		},
+		"angle": {
+			"color": "brackethighlighter.angle",
+		},
+		"tag": {
+			"color": "brackethighlighter.tag",
+		},
+		"single_quote": {
+			"color": "brackethighlighter.quote",
+		},
+		"double_quote": {
+			"color": "brackethighlighter.quote",
+		},
+		"regex": {
+			"color": "brackethighlighter.quote",
+		}
+	}
 }
