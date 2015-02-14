@@ -6,6 +6,6 @@ entity.name.filename.find-in-files {
     foreground: $link;
 }
 
-// constant.numeric.line-number.find-in-files '-' match {
-//     foreground: $comment;
-// }
+constant.numeric.line-number.find-in-files \- match {
+    foreground: $comment;
+}
